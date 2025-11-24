@@ -43,5 +43,20 @@
     },
     "LD50": "5045 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "密封儲存於陰涼、通風良好處，遠離火源與氧化劑"
+  },
+  "71-23-8": {
+    "CasNo": "71-23-8",
+    "ZhtwName": "正丙醇",
+    "EnName": "n-Propanol",
+    "ChemicalFormula": "C3H8O",
+    "HazardClassification": "易燃液體第2級,急毒性物質(口服)第4級,眼睛刺激性第2級,特定標的器官毒性(單次暴露)第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "1870 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "密封儲存於陰涼、通風良好處，遠離火源與氧化劑"
   }
 }

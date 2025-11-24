@@ -1,0 +1,26 @@
+[
+  {
+    "CasNo": "64-17-5",
+    "ZhtwName": "乙醇",
+    "EnName": "Ethanol",
+    "ChemicalFormula": "C2H6O"
+  },
+  {
+    "CasNo": "67-56-1",
+    "ZhtwName": "甲醇",
+    "EnName": "Methyl alcohol",
+    "ChemicalFormula": "CH3OH"
+  },
+  {
+    "CasNo": "67-63-0",
+    "ZhtwName": "異丙醇",
+    "EnName": "Isopropyl alcohol",
+    "ChemicalFormula": "C3H8O"
+  },
+  {
+    "CasNo": "71-23-8",
+    "ZhtwName": "正丙醇",
+    "EnName": "n-Propanol",
+    "ChemicalFormula": "C3H8O"
+  }
+]

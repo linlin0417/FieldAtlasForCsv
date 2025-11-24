@@ -11,13 +11,15 @@ const csvHeader = 'CasNo,ZhtwName,EnName,ChemicalFormula,HazardClassification,In
 export const dataPaths = {
   csv: path.join(projectRoot, 'data/csv/SDS.csv'),
   json: path.join(projectRoot, 'data/json/SDS.json'),
-  mdDir: path.join(projectRoot, 'data/md')
+  mdDir: path.join(projectRoot, 'data/md'),
+  index: path.join(projectRoot, 'data/index.json')
 };
 
 export async function ensureBaseFiles() {
   await fs.mkdir(dataPaths.mdDir, { recursive: true });
   await fs.mkdir(path.dirname(dataPaths.csv), { recursive: true });
   await fs.mkdir(path.dirname(dataPaths.json), { recursive: true });
+  await fs.mkdir(path.dirname(dataPaths.index), { recursive: true });
 
   try {
     await fs.access(dataPaths.csv);
@@ -29,6 +31,12 @@ export async function ensureBaseFiles() {
     await fs.access(dataPaths.json);
   } catch {
     await fs.writeFile(dataPaths.json, '{}\n', 'utf8');
+  }
+
+  try {
+    await fs.access(dataPaths.index);
+  } catch {
+    await fs.writeFile(dataPaths.index, '[]\n', 'utf8');
   }
 }
 
@@ -127,6 +135,22 @@ export async function writeCsvFile(records) {
   });
   const content = `${cells.join('\n')}\n`;
   await fs.writeFile(dataPaths.csv, content, 'utf8');
+}
+
+export async function writeIndexFile(records) {
+  const sorted = [...records].sort((left, right) => {
+    const tokenA = (left.CasNo ?? '').replace(/-/g, '');
+    const tokenB = (right.CasNo ?? '').replace(/-/g, '');
+    return tokenA.localeCompare(tokenB, 'en', { numeric: true });
+  });
+  const payload = sorted.map(record => ({
+    CasNo: record.CasNo,
+    ZhtwName: record.ZhtwName,
+    EnName: record.EnName,
+    ChemicalFormula: record.ChemicalFormula
+  }));
+  const content = `${JSON.stringify(payload, null, 2)}\n`;
+  await fs.writeFile(dataPaths.index, content, 'utf8');
 }
 
 function buildMarkdown(record) {

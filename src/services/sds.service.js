@@ -7,10 +7,10 @@ import {
   readCsvFile,
   writeJsonFile,
   writeCsvFile,
+  writeIndexFile,
   writeMarkdownFile,
   deleteMarkdownFile,
-  listMarkdownFiles,
-  dataPaths
+  listMarkdownFiles
 } from '../utils/file-io.js';
 import { parseSdsPayload, safeParseSdsPayload, normaliseHazardClassification } from '../validators/sds.validator.js';
 
@@ -82,15 +82,23 @@ async function persistAll() {
   const sortedRecords = Array.from(dataStore.values()).sort((a, b) => compareCasNo(a.casNo, b.casNo));
   const jsonPayload = {};
   const csvPayload = [];
+  const indexPayload = [];
 
   sortedRecords.forEach(record => {
     const external = toExternal(record);
     jsonPayload[record.casNo] = external;
     csvPayload.push(toCsvRow(record));
+    indexPayload.push({
+      CasNo: record.casNo,
+      ZhtwName: record.zhtwName,
+      EnName: record.enName,
+      ChemicalFormula: record.chemicalFormula
+    });
   });
 
   await writeJsonFile(jsonPayload);
   await writeCsvFile(csvPayload);
+  await writeIndexFile(indexPayload);
   await Promise.all(sortedRecords.map(record => writeMarkdownFile(record)));
 
   const currentMarkdownFiles = await listMarkdownFiles();
