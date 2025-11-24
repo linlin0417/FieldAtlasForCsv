@@ -22,5 +22,119 @@
     "ZhtwName": "正丙醇",
     "EnName": "n-Propanol",
     "ChemicalFormula": "C3H8O"
+  },
+  {
+    "CasNo": "127-09-3",
+    "ZhtwName": "醋酸鈉",
+    "EnName": "Sodium acetate",
+    "ChemicalFormula": "C2H3NaO2"
+  },
+  {
+    "CasNo": "497-19-8",
+    "ZhtwName": "碳酸鈉",
+    "EnName": "Sodium carbonate",
+    "ChemicalFormula": "Na2CO3"
+  },
+  {
+    "CasNo": "1310-73-2",
+    "ZhtwName": "氫氧化鈉",
+    "EnName": "Sodium hydroxide",
+    "ChemicalFormula": "NaOH"
+  },
+  {
+    "CasNo": "6484-52-2",
+    "ZhtwName": "硝酸銨",
+    "EnName": "Ammonium nitrate",
+    "ChemicalFormula": "NH4NO3"
+  },
+  {
+    "CasNo": "7558-79-4",
+    "ZhtwName": "磷酸氫鈉",
+    "EnName": "Disodium hydrogen phosphate",
+    "ChemicalFormula": "Na2HPO4"
+  },
+  {
+    "CasNo": "7647-14-5",
+    "ZhtwName": "氯化鈉",
+    "EnName": "Sodium chloride",
+    "ChemicalFormula": "NaCl"
+  },
+  {
+    "CasNo": "7757-79-1",
+    "ZhtwName": "硝酸鉀",
+    "EnName": "Potassium nitrate",
+    "ChemicalFormula": "KNO3"
+  },
+  {
+    "CasNo": "7757-82-6",
+    "ZhtwName": "硫酸鈉",
+    "EnName": "Sodium sulfate",
+    "ChemicalFormula": "Na2SO4"
+  },
+  {
+    "CasNo": "7761-88-8",
+    "ZhtwName": "硝酸銀",
+    "EnName": "Silver nitrate",
+    "ChemicalFormula": "AgNO3"
+  },
+  {
+    "CasNo": "7779-88-6",
+    "ZhtwName": "硝酸鋅",
+    "EnName": "Zinc nitrate",
+    "ChemicalFormula": "Zn(NO3)2"
+  },
+  {
+    "CasNo": "7784-27-2",
+    "ZhtwName": "硝酸鋁",
+    "EnName": "Aluminum nitrate",
+    "ChemicalFormula": "Al(NO3)3"
+  },
+  {
+    "CasNo": "10031-43-3",
+    "ZhtwName": "硝酸銅",
+    "EnName": "Copper(II) nitrate",
+    "ChemicalFormula": "Cu(NO3)2"
+  },
+  {
+    "CasNo": "10035-06-0",
+    "ZhtwName": "硝酸鉍",
+    "EnName": "Bismuth nitrate",
+    "ChemicalFormula": "Bi(NO3)3"
+  },
+  {
+    "CasNo": "10099-74-8",
+    "ZhtwName": "硝酸鉛",
+    "EnName": "Lead nitrate",
+    "ChemicalFormula": "Pb(NO3)2"
+  },
+  {
+    "CasNo": "10124-37-5",
+    "ZhtwName": "硝酸鈣",
+    "EnName": "Calcium nitrate",
+    "ChemicalFormula": "Ca(NO3)2"
+  },
+  {
+    "CasNo": "10141-05-6",
+    "ZhtwName": "硝酸鈷",
+    "EnName": "Cobalt(II) nitrate",
+    "ChemicalFormula": "Co(NO3)2"
+  },
+  {
+    "CasNo": "10377-60-3",
+    "ZhtwName": "硝酸鎂",
+    "EnName": "Magnesium nitrate",
+    "ChemicalFormula": "Mg(NO3)2"
+  },
+  {
+    "CasNo": "10421-48-4",
+    "ZhtwName": "硝酸鐵",
+    "EnName": "Iron(III) nitrate",
+    "ChemicalFormula": "Fe(NO3)3"
+  },
+  {
+    "CasNo": "12135-76-1",
+    "ZhtwName": "硫化銨",
+    "EnName": "Ammonium sulfide",
+    "ChemicalFormula": "(NH4)2S"
   }
 ]

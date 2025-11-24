@@ -58,5 +58,290 @@
     },
     "LD50": "1870 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "密封儲存於陰涼、通風良好處，遠離火源與氧化劑"
+  },
+  "127-09-3": {
+    "CasNo": "127-09-3",
+    "ZhtwName": "醋酸鈉",
+    "EnName": "Sodium acetate",
+    "ChemicalFormula": "C2H3NaO2",
+    "HazardClassification": "眼睛刺激性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，如有不適立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "3530 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強氧化劑接觸，儲存於陰涼乾燥處"
+  },
+  "497-19-8": {
+    "CasNo": "497-19-8",
+    "ZhtwName": "碳酸鈉",
+    "EnName": "Sodium carbonate",
+    "ChemicalFormula": "Na2CO3",
+    "HazardClassification": "眼睛刺激第2A級,皮膚刺激第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，如有不適立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "2800 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與酸類接觸，儲存於乾燥、陰涼、通風良好處"
+  },
+  "1310-73-2": {
+    "CasNo": "1310-73-2",
+    "ZhtwName": "氫氧化鈉",
+    "EnName": "Sodium hydroxide",
+    "ChemicalFormula": "NaOH",
+    "HazardClassification": "腐蝕性物質(皮膚腐蝕/刺激)第1A級,嚴重眼損傷/眼刺激第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物，立即就醫",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "無明確數值(屬強腐蝕性)",
+    "StabilityAndReactivity": "與水反應放熱，避免與酸類接觸，儲存於乾燥陰涼處"
+  },
+  "6484-52-2": {
+    "CasNo": "6484-52-2",
+    "ZhtwName": "硝酸銨",
+    "EnName": "Ammonium nitrate",
+    "ChemicalFormula": "NH4NO3",
+    "HazardClassification": "氧化性固體第3級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "2217 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，受熱可能分解並釋放有毒氣體，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7558-79-4": {
+    "CasNo": "7558-79-4",
+    "ZhtwName": "磷酸氫鈉",
+    "EnName": "Disodium hydrogen phosphate",
+    "ChemicalFormula": "Na2HPO4",
+    "HazardClassification": "非危險化學品",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若有不適就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，若刺激持續就醫",
+      "SkinContact": "以清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，飲水稀釋，若不適就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "穩定，避免與強酸接觸，儲存於乾燥陰涼處"
+  },
+  "7647-14-5": {
+    "CasNo": "7647-14-5",
+    "ZhtwName": "氯化鈉",
+    "EnName": "Sodium chloride",
+    "ChemicalFormula": "NaCl",
+    "HazardClassification": "未分類(一般情況下無危害)，但大量吸入或攝取可能造成不適",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，如有不適立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，飲水稀釋，若大量攝取立即就醫"
+    },
+    "LD50": "3000 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "儲存於陰涼乾燥處，避免與強酸或強氧化劑接觸"
+  },
+  "7757-79-1": {
+    "CasNo": "7757-79-1",
+    "ZhtwName": "硝酸鉀",
+    "EnName": "Potassium nitrate",
+    "ChemicalFormula": "KNO3",
+    "HazardClassification": "氧化性固體第3級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "3750 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7757-82-6": {
+    "CasNo": "7757-82-6",
+    "ZhtwName": "硫酸鈉",
+    "EnName": "Sodium sulfate",
+    "ChemicalFormula": "Na2SO4",
+    "HazardClassification": "非危險化學品",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若有不適就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，若刺激持續就醫",
+      "SkinContact": "以清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，飲水稀釋，若不適就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "穩定，避免與強酸接觸，儲存於乾燥陰涼處"
+  },
+  "7761-88-8": {
+    "CasNo": "7761-88-8",
+    "ZhtwName": "硝酸銀",
+    "EnName": "Silver nitrate",
+    "ChemicalFormula": "AgNO3",
+    "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第3級,皮膚腐蝕/刺激第1B級,眼睛損傷第1級,危害水生環境-急性第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "1173 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7779-88-6": {
+    "CasNo": "7779-88-6",
+    "ZhtwName": "硝酸鋅",
+    "EnName": "Zinc nitrate",
+    "ChemicalFormula": "Zn(NO3)2",
+    "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7784-27-2": {
+    "CasNo": "7784-27-2",
+    "ZhtwName": "硝酸鋁",
+    "EnName": "Aluminum nitrate",
+    "ChemicalFormula": "Al(NO3)3",
+    "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10031-43-3": {
+    "CasNo": "10031-43-3",
+    "ZhtwName": "硝酸銅",
+    "EnName": "Copper(II) nitrate",
+    "ChemicalFormula": "Cu(NO3)2",
+    "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "940 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10035-06-0": {
+    "CasNo": "10035-06-0",
+    "ZhtwName": "硝酸鉍",
+    "EnName": "Bismuth nitrate",
+    "ChemicalFormula": "Bi(NO3)3",
+    "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10099-74-8": {
+    "CasNo": "10099-74-8",
+    "ZhtwName": "硝酸鉛",
+    "EnName": "Lead nitrate",
+    "ChemicalFormula": "Pb(NO3)2",
+    "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,特定標的器官毒性(反覆暴露)第2級,危害水生環境-急性第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">93 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10124-37-5": {
+    "CasNo": "10124-37-5",
+    "ZhtwName": "硝酸鈣",
+    "EnName": "Calcium nitrate",
+    "ChemicalFormula": "Ca(NO3)2",
+    "HazardClassification": "氧化性固體第3級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10141-05-6": {
+    "CasNo": "10141-05-6",
+    "ZhtwName": "硝酸鈷",
+    "EnName": "Cobalt(II) nitrate",
+    "ChemicalFormula": "Co(NO3)2",
+    "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,致癌性第1B級,危害水生環境-急性第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">312 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10377-60-3": {
+    "CasNo": "10377-60-3",
+    "ZhtwName": "硝酸鎂",
+    "EnName": "Magnesium nitrate",
+    "ChemicalFormula": "Mg(NO3)2",
+    "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "10421-48-4": {
+    "CasNo": "10421-48-4",
+    "ZhtwName": "硝酸鐵",
+    "EnName": "Iron(III) nitrate",
+    "ChemicalFormula": "Fe(NO3)3",
+    "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">2000 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "12135-76-1": {
+    "CasNo": "12135-76-1",
+    "ZhtwName": "硫化銨",
+    "EnName": "Ammonium sulfide",
+    "ChemicalFormula": "(NH4)2S",
+    "HazardClassification": "急毒性物質(吸入)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": ">300 mg/kg(大鼠口服，推估值)",
+    "StabilityAndReactivity": "避免與酸類接觸，遇水或酸會釋放有毒硫化氫氣體，儲存於陰涼、通風良好處，遠離火源"
   }
 }
