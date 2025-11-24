@@ -27,6 +27,7 @@ function toExternal(record) {
     CasNo: record.casNo,
     ZhtwName: record.zhtwName,
     EnName: record.enName,
+    ChemicalFormula: record.chemicalFormula,
     HazardClassification: record.hazardClassification.join(','),
     FirstAidMeasures: {
       Inhalation: record.firstAidMeasures.inhalation,
@@ -44,6 +45,7 @@ function toCsvRow(record) {
     CasNo: record.casNo,
     ZhtwName: record.zhtwName,
     EnName: record.enName,
+    ChemicalFormula: record.chemicalFormula,
     HazardClassification: record.hazardClassification.join(','),
     Inhalation: record.firstAidMeasures.inhalation,
     EyeContact: record.firstAidMeasures.eyeContact,
@@ -59,6 +61,7 @@ function recordsEqual(a, b) {
     a.casNo === b.casNo &&
     a.zhtwName === b.zhtwName &&
     a.enName === b.enName &&
+    a.chemicalFormula === b.chemicalFormula &&
     a.ld50 === b.ld50 &&
     a.stabilityAndReactivity === b.stabilityAndReactivity &&
     a.firstAidMeasures.inhalation === b.firstAidMeasures.inhalation &&
@@ -136,6 +139,7 @@ async function importFromCsv() {
       CasNo: row.CasNo,
       ZhtwName: row.ZhtwName,
       EnName: row.EnName,
+        ChemicalFormula: row.ChemicalFormula,
       HazardClassification: normaliseHazardClassification(row.HazardClassification),
       FirstAidMeasures: {
         Inhalation: row.Inhalation,
@@ -262,6 +266,7 @@ function mapFromCsvRows(csvRows) {
       CasNo: row.CasNo,
       ZhtwName: row.ZhtwName,
       EnName: row.EnName,
+      ChemicalFormula: row.ChemicalFormula,
       HazardClassification: normaliseHazardClassification(row.HazardClassification),
       FirstAidMeasures: {
         Inhalation: row.Inhalation,

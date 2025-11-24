@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '../..');
 
-const csvHeader = 'CasNo,ZhtwName,EnName,HazardClassification,Inhalation,EyeContact,SkinContact,Ingestion,LD50,StabilityAndReactivity';
+const csvHeader = 'CasNo,ZhtwName,EnName,ChemicalFormula,HazardClassification,Inhalation,EyeContact,SkinContact,Ingestion,LD50,StabilityAndReactivity';
 
 export const dataPaths = {
   csv: path.join(projectRoot, 'data/csv/SDS.csv'),
@@ -114,6 +114,7 @@ export async function writeCsvFile(records) {
       escapeCsvCell(record.CasNo),
       escapeCsvCell(record.ZhtwName),
       escapeCsvCell(record.EnName),
+      escapeCsvCell(record.ChemicalFormula),
       escapeCsvCell(record.HazardClassification),
       escapeCsvCell(record.Inhalation),
       escapeCsvCell(record.EyeContact),
@@ -133,8 +134,9 @@ function buildMarkdown(record) {
     .map(item => `  - ${item}`)
     .join('\n') || '  - 無資料';
 
-  return `${record.zhtwName} (${record.enName})\n` +
+  return `# ${record.zhtwName} (${record.enName})\n\n` +
     `- CAS No.: ${record.casNo}\n` +
+    `- 化學式: ${record.chemicalFormula}\n` +
     `- 危害分類:\n${hazardLines}\n` +
     `- 處置方式:\n` +
     `  - 吸入: ${record.firstAidMeasures.inhalation}\n` +

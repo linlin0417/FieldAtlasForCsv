@@ -15,6 +15,7 @@ const preparedSdsSchema = z.object({
   CasNo: z.string().trim().regex(casNoPattern, { message: 'CAS No. 格式錯誤' }),
   ZhtwName: z.string().trim().min(1, { message: '請提供中文化學名稱' }),
   EnName: z.string().trim().min(1, { message: '請提供英文化學名稱' }),
+  ChemicalFormula: z.string().trim().min(1, { message: '請提供化學式' }),
   HazardClassification: hazardListSchema,
   FirstAidMeasures: firstAidSchema,
   LD50: z.string().trim().min(1, { message: '請提供 LD50 資訊' }),
@@ -45,6 +46,7 @@ export function toInternalRecord(parsed) {
     casNo: parsed.CasNo,
     zhtwName: parsed.ZhtwName,
     enName: parsed.EnName,
+    chemicalFormula: parsed.ChemicalFormula,
     hazardClassification: parsed.HazardClassification,
     firstAidMeasures: {
       inhalation: parsed.FirstAidMeasures.Inhalation,
@@ -62,6 +64,7 @@ export function parseSdsPayload(payload) {
   const hazardClassification = normaliseHazardClassification(source.HazardClassification);
   const candidate = {
     ...source,
+    ChemicalFormula: source.ChemicalFormula,
     HazardClassification: hazardClassification
   };
   const parsed = preparedSdsSchema.parse(candidate);
@@ -73,6 +76,7 @@ export function safeParseSdsPayload(payload) {
   const hazardClassification = normaliseHazardClassification(source.HazardClassification);
   const candidate = {
     ...source,
+    ChemicalFormula: source.ChemicalFormula,
     HazardClassification: hazardClassification
   };
   const result = preparedSdsSchema.safeParse(candidate);
