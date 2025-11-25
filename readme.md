@@ -86,7 +86,7 @@ Invoke-RestMethod `
 ## 資料來源
 PubChem, NIOSH, ECHA, OSHA Taiwan
 
-如果你以驗證過資料內容請在這邊打謝你的 github name 或是 id :
+如果你以驗證過資料內容請在這邊打出你的 github name 或是 id :
 ```
 當然此專案不是我專注在維護的專案  
 我可能回沒注意到你所發送的內容或PR  
