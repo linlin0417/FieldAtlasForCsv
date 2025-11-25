@@ -214,15 +214,18 @@ dialog.detail-dialog::backdrop {
   gap: 1.75rem;
 }
 
+
 .detail-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem 1.25rem;
   margin: 0;
 }
 
 .detail-info div {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .detail-info dt {

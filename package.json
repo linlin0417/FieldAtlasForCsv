@@ -1,6 +1,6 @@
 {
   "name": "field-atlas-sds",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "dataversion": "0.0.1",
   "datadate": "2025-11-15",
   "description": "接收化學品 SDS 資料並輸出 CSV/JSON/Markdown 的 API 服務",
