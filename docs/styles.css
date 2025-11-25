@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+body.dialog-open {
+  overflow: hidden;
+}
+
+main.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  min-height: 100vh;
+}
+
+.search-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.search-card h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.intro {
+  margin: 0 0 1.25rem;
+  color: #475569;
+}
+
+.search-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.search-control {
+  display: flex;
+  align-items: center;
+}
+
+#keyword {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #cbd5f5;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#keyword:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.result-summary {
+  margin-top: 1rem;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.result-section {
+  flex: 1;
+}
+
+.result-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.result-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.9rem;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  cursor: pointer;
+  min-height: 114px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.result-item:hover,
+.result-item:focus-visible {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+  box-shadow: 0 16px 32px rgba(14, 116, 144, 0.2);
+  outline: none;
+}
+
+.result-item .cas {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.result-item .name {
+  color: #334155;
+}
+
+.result-item .formula {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.empty-hint {
+  grid-column: 1 / -1;
+  background: rgba(226, 232, 240, 0.55);
+  border: 1px dashed #cbd5f5;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+}
+
+dialog.detail-dialog {
+  border: none;
+  border-radius: 1.1rem;
+  padding: 0;
+  width: min(960px, calc(100vw - 2rem));
+  background: transparent;
+  color: inherit;
+}
+
+dialog.detail-dialog::backdrop {
+  background: rgba(15, 23, 42, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.detail-dialog[open] {
+  animation: dialogFadeIn 0.2s ease;
+}
+
+.dialog-inner {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35);
+  max-height: calc(90vh - 2rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.dialog-close {
+  align-self: flex-end;
+  border: none;
+  background: #f1f5f9;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #0f172a;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
+  transition: background 0.2s ease;
+}
+
+.dialog-close:hover {
+  background: #e2e8f0;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.detail-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.detail-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 0;
+}
+
+.detail-info div {
+  display: contents;
+}
+
+.detail-info dt {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.detail-info dd {
+  margin: 0;
+  color: #334155;
+}
+
+.hazard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.hazard-tag {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.85rem;
+}
+
+.aid-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  color: #334155;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.section-header button {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid #1d4ed8;
+  background: #1d4ed8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.section-header button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.section-header button:not(:disabled):hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.markdown-content {
+  border: 1px solid #cbd5f5;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+  padding: 1rem;
+  max-height: 320px;
+  overflow: auto;
+  color: #1f2937;
+}
+
+.markdown-content pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .search-card {
+    padding: 1.25rem;
+  }
+
+  .dialog-inner {
+    padding: 1.35rem;
+  }
+}
+
+.detail-dialog[data-polyfill] {
+  display: none;
+}
+
+.detail-dialog[data-polyfill].is-open {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 1000;
+}
+
+.detail-dialog[data-polyfill] .dialog-inner {
+  max-height: calc(100vh - 3rem);
+}
+
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Atlas SDS 查詢</title>
+  <link rel="stylesheet" href="./styles.css?v=20251126">
+</head>
+<body>
+  <main class="page">
+    <section class="search-card">
+      <h1>Field Atlas SDS 查詢</h1>
+      <p class="intro">就是讓無法使用irika-web-system-v2的人也能快速查詢化學品 SDS 資料的工具   就此而已</p>
+      <label class="search-label" for="keyword">搜尋關鍵字</label>
+      <div class="search-control">
+        <input id="keyword" name="keyword" type="search" placeholder="例如 64-17-5、NaCl、乙醇" autocomplete="off">
+      </div>
+      <div class="result-summary" id="result-summary">載入中...</div>
+    </section>
+    <section class="result-section">
+      <ul class="result-grid" id="result-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title" aria-modal="true">
+    <div class="dialog-inner">
+      <button type="button" class="dialog-close" id="modal-close" aria-label="關閉視窗">&times;</button>
+      <header class="dialog-header">
+        <h2 id="detail-title"></h2>
+        <div class="detail-meta">
+          <span id="detail-cas" class="detail-chip"></span>
+          <span id="detail-formula" class="detail-chip"></span>
+        </div>
+      </header>
+      <section class="dialog-body">
+        <dl class="detail-info">
+          <div>
+            <dt>英文名稱</dt>
+            <dd id="detail-en"></dd>
+          </div>
+          <div>
+            <dt>危害分類</dt>
+            <dd id="detail-hazard"></dd>
+          </div>
+          <div>
+            <dt>急救措施</dt>
+            <dd>
+              <ul class="aid-list" id="detail-aid"></ul>
+            </dd>
+          </div>
+          <div>
+            <dt>LD50</dt>
+            <dd id="detail-ld50"></dd>
+          </div>
+          <div>
+            <dt>安定性與反應性</dt>
+            <dd id="detail-stability"></dd>
+          </div>
+        </dl>
+        <section class="markdown-section">
+          <div class="section-header">
+            <h3>Markdown 摘要</h3>
+            <button type="button" id="copy-markdown">複製內容</button>
+          </div>
+          <div class="markdown-content" id="markdown-content"></div>
+        </section>
+      </section>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js" crossorigin="anonymous"></script>
+  <script src="./app.js?v=20251126" defer></script>
+</body>
+</html>

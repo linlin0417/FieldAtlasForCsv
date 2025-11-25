@@ -36,6 +36,12 @@
     "ChemicalFormula": "Na2CO3"
   },
   {
+    "CasNo": "1310-58-3",
+    "ZhtwName": "氫氧化鉀",
+    "EnName": "Potassium hydroxide",
+    "ChemicalFormula": "KOH"
+  },
+  {
     "CasNo": "1310-73-2",
     "ZhtwName": "氫氧化鈉",
     "EnName": "Sodium hydroxide",
@@ -58,6 +64,18 @@
     "ZhtwName": "氯化鈉",
     "EnName": "Sodium chloride",
     "ChemicalFormula": "NaCl"
+  },
+  {
+    "CasNo": "7664-93-9",
+    "ZhtwName": "硫酸",
+    "EnName": "Sulfuric acid",
+    "ChemicalFormula": "H2SO4"
+  },
+  {
+    "CasNo": "7732-18-5",
+    "ZhtwName": "水",
+    "EnName": "Water",
+    "ChemicalFormula": "H2O"
   },
   {
     "CasNo": "7757-79-1",

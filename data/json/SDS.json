@@ -89,6 +89,21 @@
     "LD50": "2800 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "避免與酸類接觸，儲存於乾燥、陰涼、通風良好處"
   },
+  "1310-58-3": {
+    "CasNo": "1310-58-3",
+    "ZhtwName": "氫氧化鉀",
+    "EnName": "Potassium hydroxide",
+    "ChemicalFormula": "KOH",
+    "HazardClassification": "皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級,急毒性物質(口服)第4級",
+    "FirstAidMeasures": {
+      "Inhalation": "立即移至空氣流通處，若呼吸困難給予氧氣並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "立即以大量清水沖洗，脫去污染衣物並就醫",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "273 mg/kg (大鼠口服)",
+    "StabilityAndReactivity": "避免與酸類、金屬接觸，儲存於陰涼乾燥處，遠離可燃物"
+  },
   "1310-73-2": {
     "CasNo": "1310-73-2",
     "ZhtwName": "氫氧化鈉",
@@ -148,6 +163,36 @@
     },
     "LD50": "3000 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "儲存於陰涼乾燥處，避免與強酸或強氧化劑接觸"
+  },
+  "7664-93-9": {
+    "CasNo": "7664-93-9",
+    "ZhtwName": "硫酸",
+    "EnName": "Sulfuric acid",
+    "ChemicalFormula": "H2SO4",
+    "HazardClassification": "腐蝕性液體第1級,皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級,特定標的器官毒性(單次暴露)第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "立即移至空氣流通處，若呼吸困難給予氧氣並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "立即以大量清水沖洗，脫去污染衣物並就醫",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "2140 mg/kg (大鼠口服)",
+    "StabilityAndReactivity": "避免與水、鹼類、金屬接觸，儲存於陰涼乾燥處，遠離可燃物"
+  },
+  "7732-18-5": {
+    "CasNo": "7732-18-5",
+    "ZhtwName": "水",
+    "EnName": "Water",
+    "ChemicalFormula": "H2O",
+    "HazardClassification": "非危險化學品",
+    "FirstAidMeasures": {
+      "Inhalation": "通常不會造成危害，若有不適移至空氣流通處",
+      "EyeContact": "若有異物或刺激，沖洗眼睛並就醫",
+      "SkinContact": "無特殊危害，若有不適以清水沖洗",
+      "Ingestion": "無特殊危害，若有不適就醫"
+    },
+    "LD50": "無資料 (水為非毒性物質)",
+    "StabilityAndReactivity": "穩定，避免與強氧化劑或活潑金屬接觸"
   },
   "7757-79-1": {
     "CasNo": "7757-79-1",
