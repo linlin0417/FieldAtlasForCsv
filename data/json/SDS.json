@@ -59,6 +59,21 @@
     "LD50": "1870 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "密封儲存於陰涼、通風良好處，遠離火源與氧化劑"
   },
+  "102-71-6": {
+    "CasNo": "102-71-6",
+    "ZhtwName": "三乙醇胺溶液",
+    "EnName": "Triethanolamine solution",
+    "ChemicalFormula": "C6H15NO3",
+    "HazardClassification": "皮膚刺激第2類,眼睛刺激第2類,危害水生環境-慢性第3類",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "漱口，勿催吐，立即就醫"
+    },
+    "LD50": "4920 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強氧化劑接觸，儲存於陰涼乾燥處，密封容器"
+  },
   "127-09-3": {
     "CasNo": "127-09-3",
     "ZhtwName": "醋酸鈉",
@@ -119,6 +134,36 @@
     "LD50": "無明確數值(屬強腐蝕性)",
     "StabilityAndReactivity": "與水反應放熱，避免與酸類接觸，儲存於乾燥陰涼處"
   },
+  "1336-21-6": {
+    "CasNo": "1336-21-6",
+    "ZhtwName": "氨水",
+    "EnName": "Ammonia solution",
+    "ChemicalFormula": "NH3·H2O",
+    "HazardClassification": "急毒性物質(吸入)第4類,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類,危害水生環境-急性第1類",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "脫去污染衣物，以大量清水沖洗",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "350 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與酸類、氧化劑接觸，儲存於陰涼乾燥處，密封容器"
+  },
+  "1393-92-6": {
+    "CasNo": "1393-92-6",
+    "ZhtwName": "石蕊試紙",
+    "EnName": "Litmus paper",
+    "ChemicalFormula": "天然混合物",
+    "HazardClassification": "非危險品",
+    "FirstAidMeasures": {
+      "Inhalation": "無特殊危害，若有粉塵吸入，移至空氣流通處",
+      "EyeContact": "若有粉塵進入眼睛，以清水沖洗",
+      "SkinContact": "無特殊危害，若有刺激感，以清水沖洗",
+      "Ingestion": "漱口，若不適立即就醫"
+    },
+    "LD50": "無資料(非危險品)",
+    "StabilityAndReactivity": "避免潮濕，儲存於陰涼乾燥處"
+  },
   "6484-52-2": {
     "CasNo": "6484-52-2",
     "ZhtwName": "硝酸銨",
@@ -178,6 +223,36 @@
     },
     "LD50": "2140 mg/kg (大鼠口服)",
     "StabilityAndReactivity": "避免與水、鹼類、金屬接觸，儲存於陰涼乾燥處，遠離可燃物"
+  },
+  "7697-37-2": {
+    "CasNo": "7697-37-2",
+    "ZhtwName": "硝酸",
+    "EnName": "Nitric acid",
+    "ChemicalFormula": "HNO3",
+    "HazardClassification": "氧化性液體第3類,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "脫去污染衣物，以大量清水沖洗",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "430 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與有機物、可燃物、強鹼接觸，儲存於陰涼乾燥處，密封容器"
+  },
+  "7705-08-0": {
+    "CasNo": "7705-08-0",
+    "ZhtwName": "三氯化鐵",
+    "EnName": "Ferric chloride",
+    "ChemicalFormula": "FeCl3",
+    "HazardClassification": "腐蝕性物質,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "脫去污染衣物，以大量清水沖洗",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "450 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強鹼、強氧化劑接觸，儲存於陰涼乾燥處，密封容器"
   },
   "7732-18-5": {
     "CasNo": "7732-18-5",
@@ -268,6 +343,21 @@
     },
     "LD50": ">2000 mg/kg(大鼠口服，推估值)",
     "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7789-00-6": {
+    "CasNo": "7789-00-6",
+    "ZhtwName": "鉻酸鉀",
+    "EnName": "Potassium chromate",
+    "ChemicalFormula": "K2CrO4",
+    "HazardClassification": "急毒性物質(口服)第3類,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類,致癌性第1類,生殖毒性第1類,危害水生環境-急性第1類",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "脫去污染衣物，以大量清水沖洗",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "1870 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與還原劑、有機物接觸，儲存於陰涼乾燥處，密封容器"
   },
   "10031-43-3": {
     "CasNo": "10031-43-3",

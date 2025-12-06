@@ -24,6 +24,12 @@
     "ChemicalFormula": "C3H8O"
   },
   {
+    "CasNo": "102-71-6",
+    "ZhtwName": "三乙醇胺溶液",
+    "EnName": "Triethanolamine solution",
+    "ChemicalFormula": "C6H15NO3"
+  },
+  {
     "CasNo": "127-09-3",
     "ZhtwName": "醋酸鈉",
     "EnName": "Sodium acetate",
@@ -48,6 +54,18 @@
     "ChemicalFormula": "NaOH"
   },
   {
+    "CasNo": "1336-21-6",
+    "ZhtwName": "氨水",
+    "EnName": "Ammonia solution",
+    "ChemicalFormula": "NH3·H2O"
+  },
+  {
+    "CasNo": "1393-92-6",
+    "ZhtwName": "石蕊試紙",
+    "EnName": "Litmus paper",
+    "ChemicalFormula": "天然混合物"
+  },
+  {
     "CasNo": "6484-52-2",
     "ZhtwName": "硝酸銨",
     "EnName": "Ammonium nitrate",
@@ -70,6 +88,18 @@
     "ZhtwName": "硫酸",
     "EnName": "Sulfuric acid",
     "ChemicalFormula": "H2SO4"
+  },
+  {
+    "CasNo": "7697-37-2",
+    "ZhtwName": "硝酸",
+    "EnName": "Nitric acid",
+    "ChemicalFormula": "HNO3"
+  },
+  {
+    "CasNo": "7705-08-0",
+    "ZhtwName": "三氯化鐵",
+    "EnName": "Ferric chloride",
+    "ChemicalFormula": "FeCl3"
   },
   {
     "CasNo": "7732-18-5",
@@ -106,6 +136,12 @@
     "ZhtwName": "硝酸鋁",
     "EnName": "Aluminum nitrate",
     "ChemicalFormula": "Al(NO3)3"
+  },
+  {
+    "CasNo": "7789-00-6",
+    "ZhtwName": "鉻酸鉀",
+    "EnName": "Potassium chromate",
+    "ChemicalFormula": "K2CrO4"
   },
   {
     "CasNo": "10031-43-3",
