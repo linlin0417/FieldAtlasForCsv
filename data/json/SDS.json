@@ -164,6 +164,21 @@
     "LD50": "無資料(非危險品)",
     "StabilityAndReactivity": "避免潮濕，儲存於陰涼乾燥處"
   },
+  "4097-89-6": {
+    "CasNo": "4097-89-6",
+    "ZhtwName": "三(2-氨乙基)胺溶液",
+    "EnName": "Tris(2-aminoethyl)amine solution",
+    "ChemicalFormula": "C6H18N4",
+    "HazardClassification": "皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級,急毒性物質(口服)第4級,危害水生環境(急性)第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "立即移至空氣流通處，保持呼吸暢通，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "立即以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "1470 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與酸類、氧化劑接觸，儲存於陰涼通風處，密封容器"
+  },
   "6484-52-2": {
     "CasNo": "6484-52-2",
     "ZhtwName": "硝酸銨",
@@ -193,6 +208,21 @@
     },
     "LD50": ">2000 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "穩定，避免與強酸接觸，儲存於乾燥陰涼處"
+  },
+  "7647-01-0": {
+    "CasNo": "7647-01-0",
+    "ZhtwName": "鹽酸",
+    "EnName": "Hydrochloric acid",
+    "ChemicalFormula": "HCl",
+    "HazardClassification": "腐蝕性液體第1級,急毒性物質(吸入)第3級,皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "立即移至空氣流通處，保持呼吸暢通，必要時給予人工呼吸並立即就醫",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
+      "SkinContact": "立即以大量清水沖洗，脫去污染衣物",
+      "Ingestion": "勿催吐，立即就醫"
+    },
+    "LD50": "238 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強鹼、氧化劑接觸，儲存於陰涼通風處，密封容器"
   },
   "7647-14-5": {
     "CasNo": "7647-14-5",

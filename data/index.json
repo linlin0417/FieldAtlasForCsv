@@ -66,6 +66,12 @@
     "ChemicalFormula": "天然混合物"
   },
   {
+    "CasNo": "4097-89-6",
+    "ZhtwName": "三(2-氨乙基)胺溶液",
+    "EnName": "Tris(2-aminoethyl)amine solution",
+    "ChemicalFormula": "C6H18N4"
+  },
+  {
     "CasNo": "6484-52-2",
     "ZhtwName": "硝酸銨",
     "EnName": "Ammonium nitrate",
@@ -76,6 +82,12 @@
     "ZhtwName": "磷酸氫鈉",
     "EnName": "Disodium hydrogen phosphate",
     "ChemicalFormula": "Na2HPO4"
+  },
+  {
+    "CasNo": "7647-01-0",
+    "ZhtwName": "鹽酸",
+    "EnName": "Hydrochloric acid",
+    "ChemicalFormula": "HCl"
   },
   {
     "CasNo": "7647-14-5",
