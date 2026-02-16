@@ -4,11 +4,21 @@ const casNoPattern = /^\d{2,7}-\d{2}-\d$/;
 
 const hazardListSchema = z.array(z.string().trim().min(1)).nonempty({ message: '危害分類不得為空' });
 
+const optionalTextSchema = z.preprocess(
+  value => {
+    if (value == null) {
+      return '';
+    }
+    return value;
+  },
+  z.string().trim()
+);
+
 const firstAidSchema = z.object({
-  Inhalation: z.string().trim().min(1, { message: '請填寫吸入處置方式' }),
-  EyeContact: z.string().trim().min(1, { message: '請填寫眼睛接觸處置方式' }),
-  SkinContact: z.string().trim().min(1, { message: '請填寫皮膚接觸處置方式' }),
-  Ingestion: z.string().trim().min(1, { message: '請填寫食入處置方式' })
+  Inhalation: optionalTextSchema.optional().default(''),
+  EyeContact: optionalTextSchema.optional().default(''),
+  SkinContact: optionalTextSchema.optional().default(''),
+  Ingestion: optionalTextSchema.optional().default('')
 });
 
 const preparedSdsSchema = z.object({
@@ -17,7 +27,7 @@ const preparedSdsSchema = z.object({
   EnName: z.string().trim().min(1, { message: '請提供英文化學名稱' }),
   ChemicalFormula: z.string().trim().min(1, { message: '請提供化學式' }),
   HazardClassification: hazardListSchema,
-  FirstAidMeasures: firstAidSchema,
+  FirstAidMeasures: firstAidSchema.optional().default({}),
   LD50: z.string().trim().min(1, { message: '請提供 LD50 資訊' }),
   StabilityAndReactivity: z.string().trim().min(1, { message: '請提供安定性與反應性資訊' })
 });
@@ -49,10 +59,10 @@ export function toInternalRecord(parsed) {
     chemicalFormula: parsed.ChemicalFormula,
     hazardClassification: parsed.HazardClassification,
     firstAidMeasures: {
-      inhalation: parsed.FirstAidMeasures.Inhalation,
-      eyeContact: parsed.FirstAidMeasures.EyeContact,
-      skinContact: parsed.FirstAidMeasures.SkinContact,
-      ingestion: parsed.FirstAidMeasures.Ingestion
+      inhalation: parsed.FirstAidMeasures.Inhalation ?? '',
+      eyeContact: parsed.FirstAidMeasures.EyeContact ?? '',
+      skinContact: parsed.FirstAidMeasures.SkinContact ?? '',
+      ingestion: parsed.FirstAidMeasures.Ingestion ?? ''
     },
     ld50: parsed.LD50,
     stabilityAndReactivity: parsed.StabilityAndReactivity

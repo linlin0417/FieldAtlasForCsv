@@ -43,6 +43,8 @@ index.json //索引
 }
 ```
 
+`FirstAidMeasures` 的 `Inhalation`、`EyeContact`、`SkinContact`、`Ingestion` 可留空字串，系統會接受並在網頁詳情中自動隱藏空白項目。
+
 你甚至可以使用 ps 或 cmd 而不透過妳自己寫的用戶端新增內容
 PS 並使用預設port
 ```ps

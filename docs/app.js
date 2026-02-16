@@ -398,12 +398,23 @@ function renderAid(measures = {}) {
     { label: '皮膚接觸', key: 'SkinContact' },
     { label: '食入', key: 'Ingestion' }
   ];
+  let renderedCount = 0;
   entries.forEach(item => {
-    const text = measures[item.key];
+    const text = (measures[item.key] ?? '').toString().trim();
+    if (!text) {
+      return;
+    }
     const li = document.createElement('li');
-    li.textContent = text ? `${item.label}: ${text}` : `${item.label}: —`;
+    li.textContent = `${item.label}: ${text}`;
     detailAid.appendChild(li);
+    renderedCount += 1;
   });
+
+  if (renderedCount === 0) {
+    const li = document.createElement('li');
+    li.textContent = '—';
+    detailAid.appendChild(li);
+  }
 }
 
 async function renderMarkdown(casNo) {
