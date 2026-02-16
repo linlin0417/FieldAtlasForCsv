@@ -1,5 +1,11 @@
 [
   {
+    "CasNo": "50-81-7",
+    "ZhtwName": "抗壞血酸",
+    "EnName": "Ascorbic acid",
+    "ChemicalFormula": "C6H8O6"
+  },
+  {
     "CasNo": "64-17-5",
     "ZhtwName": "乙醇",
     "EnName": "Ethanol",
@@ -18,6 +24,18 @@
     "ChemicalFormula": "C3H8O"
   },
   {
+    "CasNo": "67-64-1",
+    "ZhtwName": "丙酮",
+    "EnName": "Acetone",
+    "ChemicalFormula": "C3H6O"
+  },
+  {
+    "CasNo": "69-72-7",
+    "ZhtwName": "水楊酸",
+    "EnName": "Salicylic acid",
+    "ChemicalFormula": "C7H6O3"
+  },
+  {
     "CasNo": "71-23-8",
     "ZhtwName": "正丙醇",
     "EnName": "n-Propanol",
@@ -30,10 +48,22 @@
     "ChemicalFormula": "C6H15NO3"
   },
   {
+    "CasNo": "108-88-3",
+    "ZhtwName": "甲苯",
+    "EnName": "Toluene",
+    "ChemicalFormula": "C7H8"
+  },
+  {
     "CasNo": "127-09-3",
     "ZhtwName": "醋酸鈉",
     "EnName": "Sodium acetate",
     "ChemicalFormula": "C2H3NaO2"
+  },
+  {
+    "CasNo": "141-78-6",
+    "ZhtwName": "乙酸乙酯",
+    "EnName": "Ethyl acetate",
+    "ChemicalFormula": "C4H8O2"
   },
   {
     "CasNo": "497-19-8",
@@ -78,6 +108,12 @@
     "ChemicalFormula": "NH4NO3"
   },
   {
+    "CasNo": "7487-88-9",
+    "ZhtwName": "硫酸鎂",
+    "EnName": "Magnesium sulfate",
+    "ChemicalFormula": "MgSO4"
+  },
+  {
     "CasNo": "7558-79-4",
     "ZhtwName": "磷酸氫鈉",
     "EnName": "Disodium hydrogen phosphate",
@@ -100,6 +136,12 @@
     "ZhtwName": "硫酸",
     "EnName": "Sulfuric acid",
     "ChemicalFormula": "H2SO4"
+  },
+  {
+    "CasNo": "7681-11-0",
+    "ZhtwName": "碘化鉀",
+    "EnName": "Potassium iodide",
+    "ChemicalFormula": "KI"
   },
   {
     "CasNo": "7697-37-2",
@@ -132,6 +174,12 @@
     "ChemicalFormula": "Na2SO4"
   },
   {
+    "CasNo": "7758-05-6",
+    "ZhtwName": "碘酸鉀",
+    "EnName": "Potassium iodate",
+    "ChemicalFormula": "KIO3"
+  },
+  {
     "CasNo": "7761-88-8",
     "ZhtwName": "硝酸銀",
     "EnName": "Silver nitrate",
@@ -154,6 +202,18 @@
     "ZhtwName": "鉻酸鉀",
     "EnName": "Potassium chromate",
     "ChemicalFormula": "K2CrO4"
+  },
+  {
+    "CasNo": "9005-25-8",
+    "ZhtwName": "澱粉",
+    "EnName": "Starch",
+    "ChemicalFormula": "(C6H10O5)n"
+  },
+  {
+    "CasNo": "9005-84-9",
+    "ZhtwName": "可溶性澱粉",
+    "EnName": "Starch, soluble",
+    "ChemicalFormula": "-"
   },
   {
     "CasNo": "10031-43-3",
