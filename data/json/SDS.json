@@ -14,6 +14,21 @@
     "LD50": "-",
     "StabilityAndReactivity": "避免高溫與強氧化劑，保持容器密閉並存放於陰涼乾燥處"
   },
+  "56-40-6": {
+    "CasNo": "56-40-6",
+    "ZhtwName": "甘氨酸",
+    "EnName": "Glycine",
+    "ChemicalFormula": "C2H5NO2",
+    "HazardClassification": "皮膚過敏物質第1級,嚴重損傷/刺激眼睛物質第2B級,特定標的器官毒性(單次暴露)第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "",
+      "EyeContact": "",
+      "SkinContact": "",
+      "Ingestion": ""
+    },
+    "LD50": "7930 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強氧化劑接觸"
+  },
   "64-17-5": {
     "CasNo": "64-17-5",
     "ZhtwName": "乙醇",
@@ -511,7 +526,7 @@
   },
   "7758-99-8": {
     "CasNo": "7758-99-8",
-    "ZhtwName": "硫酸銅(II)無水合物",
+    "ZhtwName": "硫酸銅(II)五水合物",
     "EnName": "Copper(II) sulfate pentahydrate",
     "ChemicalFormula": "CuSO4·5H2O",
     "HazardClassification": "急毒性物質第4級(吞食),腐蝕/刺激皮膚物質第2級,嚴重損傷/刺激眼睛物質第2A級,皮膚過敏物質第1級,生殖細胞致突變性物質第2級,生殖毒性物質第2級,特定標的器官系統毒性物質-重複暴露第1級,水環境之危害物質(慢毒性)第1級",

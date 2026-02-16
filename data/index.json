@@ -6,6 +6,12 @@
     "ChemicalFormula": "C6H8O6"
   },
   {
+    "CasNo": "56-40-6",
+    "ZhtwName": "甘氨酸",
+    "EnName": "Glycine",
+    "ChemicalFormula": "C2H5NO2"
+  },
+  {
     "CasNo": "64-17-5",
     "ZhtwName": "乙醇",
     "EnName": "Ethanol",
@@ -205,7 +211,7 @@
   },
   {
     "CasNo": "7758-99-8",
-    "ZhtwName": "硫酸銅(II)無水合物",
+    "ZhtwName": "硫酸銅(II)五水合物",
     "EnName": "Copper(II) sulfate pentahydrate",
     "ChemicalFormula": "CuSO4·5H2O"
   },
