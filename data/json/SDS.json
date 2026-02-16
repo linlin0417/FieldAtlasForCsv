@@ -164,6 +164,21 @@
     "LD50": "5620 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "可與強氧化劑、強酸、強鹼及硝酸鹽劇烈反應；亦會與氯磺酸、氫鋁鋰、2-氯甲基呋喃及叔丁醇鉀劇烈反應，可能引發火災或爆炸。"
   },
+  "471-34-1": {
+    "CasNo": "471-34-1",
+    "ZhtwName": "碳酸鈣",
+    "EnName": "Calcium carbonate",
+    "ChemicalFormula": "CaCO3",
+    "HazardClassification": "-",
+    "FirstAidMeasures": {
+      "Inhalation": "將患者移至空氣新鮮處並保持呼吸道暢通。",
+      "EyeContact": "以清水緩和沖洗眼睛並持續數分鐘。",
+      "SkinContact": "以清水沖洗皮膚以去除殘留粉塵。",
+      "Ingestion": "以清水漱口並觀察是否有不適情形。"
+    },
+    "LD50": "-",
+    "StabilityAndReactivity": "在一般條件下化學性質穩定；與酸類反應會產生二氧化碳氣體，與氟、鋁、鎂等物質可發生放熱反應，應避免潮濕環境以維持產品品質。"
+  },
   "497-19-8": {
     "CasNo": "497-19-8",
     "ZhtwName": "碳酸鈉",
@@ -239,6 +254,21 @@
     "LD50": "無資料(非危險品)",
     "StabilityAndReactivity": "避免潮濕，儲存於陰涼乾燥處"
   },
+  "1787-61-7": {
+    "CasNo": "1787-61-7",
+    "ZhtwName": "鉻黑T",
+    "EnName": "Eriochrome Black T",
+    "ChemicalFormula": "C20H12N3NaO7S",
+    "HazardClassification": "Eye irritation Category 2,Hazardous to the aquatic environment,chronic Category 2",
+    "FirstAidMeasures": {
+      "Inhalation": "將患者移至空氣新鮮處，保持安靜並維持呼吸道暢通。",
+      "EyeContact": "立即以清水小心沖洗數分鐘，如有隱形眼鏡且易於取出，先取下後持續沖洗。",
+      "SkinContact": "以清水或淋浴徹底沖洗皮膚並洗淨殘留粉末。",
+      "Ingestion": "以清水漱口，如患者清醒可給予少量清水飲用。"
+    },
+    "LD50": "17590 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "在常溫常壓下化學性質穩定；應避免高熱、火焰與火花，固體粉塵與空氣可形成可燃性粉塵雲；火災或高溫分解時可能產生一氧化碳與二氧化碳、氮氧化物、鈉氧化物及硫氧化物等刺激性或有害氣體。"
+  },
   "4097-89-6": {
     "CasNo": "4097-89-6",
     "ZhtwName": "三(2-氨乙基)胺溶液",
@@ -253,6 +283,21 @@
     },
     "LD50": "1470 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "避免與酸類、氧化劑接觸，儲存於陰涼通風處，密封容器"
+  },
+  "6381-92-6": {
+    "CasNo": "6381-92-6",
+    "ZhtwName": "乙二胺四乙酸二鈉二水合物",
+    "EnName": "Disodium ethylenediaminetetraacetate dihydrate",
+    "ChemicalFormula": "C10H18N2Na2O10",
+    "HazardClassification": "皮膚過敏物質第1級,腐蝕／刺激皮膚物質第2級,嚴重損傷／刺激眼睛物質第2A級,特定標的器官系統毒性物質～單一暴露第3級,水環境之危害物質（慢毒性）第3級",
+    "FirstAidMeasures": {
+      "Inhalation": "將患者移至空氣新鮮處，若無呼吸時給予人工呼吸並持續監測呼吸與意識狀況。",
+      "EyeContact": "立即以大量清水沖洗眼睛至少15分鐘，保持眼瞼張開並轉動眼球，以徹底清除殘留物。",
+      "SkinContact": "脫去受污染衣物後，以清水和肥皂徹底沖洗皮膚至少15分鐘，注意是否出現發紅、疼痛或過敏反應。",
+      "Ingestion": "誤食後以清水漱口，留意是否出現噁心、嘔吐或腹部不適，如大量吞食應尋求醫療評估。"
+    },
+    "LD50": "-",
+    "StabilityAndReactivity": "一般情況下穩定；避免高熱、火焰及其他引火源，並避免產生粉塵。與強酸、金屬（如鋁、鋅、含碳鋼、銅及其合金、鍍鋅金屬、鎳）及強氧化劑不相容，接觸金屬或鹼性物質時可能產生易燃氫氣；燃燒或熱分解時可能產生碳氧化物、氮氧化物及鈉氧化物。"
   },
   "6484-52-2": {
     "CasNo": "6484-52-2",
@@ -359,6 +404,21 @@
     "LD50": "口服 LD50 3118 mg/kg (大鼠)",
     "StabilityAndReactivity": "在正常環境下化學性質穩定"
   },
+  "7681-52-9": {
+    "CasNo": "7681-52-9",
+    "ZhtwName": "次氯酸鈉溶液",
+    "EnName": "Sodium hypochlorite solution",
+    "ChemicalFormula": "NaClO",
+    "HazardClassification": "GHS05,GHS09,造成嚴重皮膚灼傷和眼損傷,對水生生物有毒並具有長期持續影響",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處",
+      "EyeContact": "以大量清水沖洗",
+      "SkinContact": "以大量清水沖洗",
+      "Ingestion": ""
+    },
+    "LD50": "-",
+    "StabilityAndReactivity": "避免與酸及氧化劑接觸"
+  },
   "7697-37-2": {
     "CasNo": "7697-37-2",
     "ZhtwName": "硝酸",
@@ -449,6 +509,21 @@
     "LD50": "500.1 mg/kg（口服，推估值）",
     "StabilityAndReactivity": "在標準大氣環境下化學性質穩定"
   },
+  "7758-99-8": {
+    "CasNo": "7758-99-8",
+    "ZhtwName": "硫酸銅(II)無水合物",
+    "EnName": "Copper(II) sulfate pentahydrate",
+    "ChemicalFormula": "CuSO4·5H2O",
+    "HazardClassification": "急毒性物質第4級(吞食),腐蝕/刺激皮膚物質第2級,嚴重損傷/刺激眼睛物質第2A級,皮膚過敏物質第1級,生殖細胞致突變性物質第2級,生殖毒性物質第2級,特定標的器官系統毒性物質-重複暴露第1級,水環境之危害物質(慢毒性)第1級",
+    "FirstAidMeasures": {
+      "Inhalation": "將患者移至空氣流通處，必要時施以人工呼吸。",
+      "EyeContact": "立即以大量清水沖洗至少15分鐘。",
+      "SkinContact": "以清水與肥皂沖洗至少15分鐘並徹底清潔皮膚。",
+      "Ingestion": "給予大量清水並避免催吐。"
+    },
+    "LD50": "960 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "常溫常壓下安定；與羥胺可能起火，與鎂反應產生氫氣，對金屬具有腐蝕性；與強氧化劑、還原劑不相容；避免高溫、火焰及接觸不相容物質；熱分解可產生硫氧化物與銅氧化物。"
+  },
   "7761-88-8": {
     "CasNo": "7761-88-8",
     "ZhtwName": "硝酸銀",
@@ -463,6 +538,21 @@
     },
     "LD50": "1173 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "7772-98-7": {
+    "CasNo": "7772-98-7",
+    "ZhtwName": "硫代硫酸鈉",
+    "EnName": "Sodium thiosulfate",
+    "ChemicalFormula": "Na2S2O3",
+    "HazardClassification": "-",
+    "FirstAidMeasures": {
+      "Inhalation": "移至通風處",
+      "EyeContact": "以清水沖洗",
+      "SkinContact": "以水沖洗",
+      "Ingestion": "飲水稀釋"
+    },
+    "LD50": "5000 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "避免與強氧化劑接觸"
   },
   "7779-88-6": {
     "CasNo": "7779-88-6",
@@ -508,6 +598,21 @@
     },
     "LD50": "1870 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "避免與還原劑、有機物接觸，儲存於陰涼乾燥處，密封容器"
+  },
+  "7791-18-6": {
+    "CasNo": "7791-18-6",
+    "ZhtwName": "氯化鎂六水合物",
+    "EnName": "Magnesium chloride hexahydrate",
+    "ChemicalFormula": "MgCl2·6H2O",
+    "HazardClassification": "-",
+    "FirstAidMeasures": {
+      "Inhalation": "將傷者移至空氣新鮮處，保持安靜並觀察呼吸與症狀變化。",
+      "EyeContact": "立即以大量清水沖洗眼睛，持續沖洗並在可能情況下取下隱形眼鏡。",
+      "SkinContact": "以大量清水沖洗皮膚或淋浴，並在沖洗過程中同時移除受污染衣物。",
+      "Ingestion": "誤食後給予少量清水飲用（約1–2杯），如感到不適應盡速尋求醫療評估。"
+    },
+    "LD50": "LD50(大鼠口服, 雌性) > 5,000 mg/kg (OECD 423, 無水物質, magnesium chloride)",
+    "StabilityAndReactivity": "在標準大氣狀態與室溫下化學性質穩定，產品本身不易燃；火災時可分解產生氯化氫氣體與氧化鎂，需避免產生大量粉塵並依一般無機鹽類化學品方式儲存與處置。"
   },
   "9005-25-8": {
     "CasNo": "9005-25-8",
@@ -643,6 +748,21 @@
     },
     "LD50": ">2000 mg/kg(大鼠口服，推估值)",
     "StabilityAndReactivity": "避免與可燃物、還原劑接觸，儲存於陰涼、乾燥、通風良好處，遠離火源"
+  },
+  "12125-02-9": {
+    "CasNo": "12125-02-9",
+    "ZhtwName": "氯化銨",
+    "EnName": "Ammonium chloride",
+    "ChemicalFormula": "NH4Cl",
+    "HazardClassification": "Acute toxicity Category 4,Eye irritation Category 2",
+    "FirstAidMeasures": {
+      "Inhalation": "將患者移至空氣新鮮處並保持安靜。",
+      "EyeContact": "立即以大量清水小心沖洗眼睛數分鐘，如有隱形眼鏡且易於取出，先取下後持續沖洗。",
+      "SkinContact": "以清水或淋浴徹底沖洗皮膚，並在沖洗過程中移除受污染衣物。",
+      "Ingestion": "以清水漱口，並讓患者緩慢飲用少量清水（約1–2杯）。"
+    },
+    "LD50": "1410 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "在一般室溫與常規條件下化學性質穩定；與強酸或強鹼反應劇烈，與鹵素、強鹼性物質、硝酸鹽、氯酸鹽、重金屬鹽、亞硝酸鹽、氫氰酸、氯氣及強氧化劑等接觸可能引發可燃性氣體產生或爆炸風險；與鋁、鉛、鐵、銅及其化合物不相容；火災時可分解產生氮氧化物及氯化氫等有害氣體。"
   },
   "12135-76-1": {
     "CasNo": "12135-76-1",

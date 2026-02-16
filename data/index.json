@@ -66,6 +66,12 @@
     "ChemicalFormula": "C4H8O2"
   },
   {
+    "CasNo": "471-34-1",
+    "ZhtwName": "碳酸鈣",
+    "EnName": "Calcium carbonate",
+    "ChemicalFormula": "CaCO3"
+  },
+  {
     "CasNo": "497-19-8",
     "ZhtwName": "碳酸鈉",
     "EnName": "Sodium carbonate",
@@ -96,10 +102,22 @@
     "ChemicalFormula": "天然混合物"
   },
   {
+    "CasNo": "1787-61-7",
+    "ZhtwName": "鉻黑T",
+    "EnName": "Eriochrome Black T",
+    "ChemicalFormula": "C20H12N3NaO7S"
+  },
+  {
     "CasNo": "4097-89-6",
     "ZhtwName": "三(2-氨乙基)胺溶液",
     "EnName": "Tris(2-aminoethyl)amine solution",
     "ChemicalFormula": "C6H18N4"
+  },
+  {
+    "CasNo": "6381-92-6",
+    "ZhtwName": "乙二胺四乙酸二鈉二水合物",
+    "EnName": "Disodium ethylenediaminetetraacetate dihydrate",
+    "ChemicalFormula": "C10H18N2Na2O10"
   },
   {
     "CasNo": "6484-52-2",
@@ -144,6 +162,12 @@
     "ChemicalFormula": "KI"
   },
   {
+    "CasNo": "7681-52-9",
+    "ZhtwName": "次氯酸鈉溶液",
+    "EnName": "Sodium hypochlorite solution",
+    "ChemicalFormula": "NaClO"
+  },
+  {
     "CasNo": "7697-37-2",
     "ZhtwName": "硝酸",
     "EnName": "Nitric acid",
@@ -180,10 +204,22 @@
     "ChemicalFormula": "KIO3"
   },
   {
+    "CasNo": "7758-99-8",
+    "ZhtwName": "硫酸銅(II)無水合物",
+    "EnName": "Copper(II) sulfate pentahydrate",
+    "ChemicalFormula": "CuSO4·5H2O"
+  },
+  {
     "CasNo": "7761-88-8",
     "ZhtwName": "硝酸銀",
     "EnName": "Silver nitrate",
     "ChemicalFormula": "AgNO3"
+  },
+  {
+    "CasNo": "7772-98-7",
+    "ZhtwName": "硫代硫酸鈉",
+    "EnName": "Sodium thiosulfate",
+    "ChemicalFormula": "Na2S2O3"
   },
   {
     "CasNo": "7779-88-6",
@@ -202,6 +238,12 @@
     "ZhtwName": "鉻酸鉀",
     "EnName": "Potassium chromate",
     "ChemicalFormula": "K2CrO4"
+  },
+  {
+    "CasNo": "7791-18-6",
+    "ZhtwName": "氯化鎂六水合物",
+    "EnName": "Magnesium chloride hexahydrate",
+    "ChemicalFormula": "MgCl2·6H2O"
   },
   {
     "CasNo": "9005-25-8",
@@ -256,6 +298,12 @@
     "ZhtwName": "硝酸鐵",
     "EnName": "Iron(III) nitrate",
     "ChemicalFormula": "Fe(NO3)3"
+  },
+  {
+    "CasNo": "12125-02-9",
+    "ZhtwName": "氯化銨",
+    "EnName": "Ammonium chloride",
+    "ChemicalFormula": "NH4Cl"
   },
   {
     "CasNo": "12135-76-1",
