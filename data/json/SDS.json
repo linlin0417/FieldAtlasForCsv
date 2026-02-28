@@ -4,7 +4,7 @@
     "ZhtwName": "抗壞血酸",
     "EnName": "Ascorbic acid",
     "ChemicalFormula": "C6H8O6",
-    "HazardClassification": "-",
+    "HazardClassification": "急毒性物質第5級(吞食),急毒性物質第5級(皮膚)",
     "FirstAidMeasures": {
       "Inhalation": "",
       "EyeContact": "",
