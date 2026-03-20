@@ -1,4 +1,19 @@
 {
+  "50-78-2": {
+    "CasNo": "50-78-2",
+    "ZhtwName": "乙醯水楊酸",
+    "EnName": "Acetylsalicylic Acid",
+    "ChemicalFormula": "C9H8O4",
+    "HazardClassification": "急毒性物質(口服)第4級,皮膚刺激第2級,眼睛刺激第2A級,特定標的器官毒性(單次暴露)第3級(呼吸道刺激)",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處",
+      "EyeContact": "以大量清水沖洗",
+      "SkinContact": "以清水沖洗",
+      "Ingestion": "漱口"
+    },
+    "LD50": "200 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "常溫下穩定，避免受熱及與強氧化劑接觸"
+  },
   "50-81-7": {
     "CasNo": "50-81-7",
     "ZhtwName": "抗壞血酸",
