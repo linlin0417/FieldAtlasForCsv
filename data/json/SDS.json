@@ -119,6 +119,21 @@
     "LD50": "1870 mg/kg(大鼠口服)",
     "StabilityAndReactivity": "密封儲存於陰涼、通風良好處，遠離火源與氧化劑"
   },
+  "77-09-8": {
+    "CasNo": "77-09-8",
+    "ZhtwName": "酚酞",
+    "EnName": "Phenolphthalein",
+    "ChemicalFormula": "C20H14O4",
+    "HazardClassification": "急毒性物質(口服)第4級,致癌性物質第2級,眼睛刺激第2級",
+    "FirstAidMeasures": {
+      "Inhalation": "移至空氣流通處",
+      "EyeContact": "以大量清水沖洗",
+      "SkinContact": "以清水沖洗",
+      "Ingestion": "漱口"
+    },
+    "LD50": "8000 mg/kg(大鼠口服)",
+    "StabilityAndReactivity": "常溫下穩定，避免與強氧化劑接觸"
+  },
   "102-71-6": {
     "CasNo": "102-71-6",
     "ZhtwName": "三乙醇胺溶液",
