@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #040b15;
+  --panel: #0a1221;
+  --panel-accent: rgba(255, 255, 255, 0.08);
+  --text: #f8fafc;
+  --muted: rgba(248, 250, 252, 0.7);
+  --accent: #7dd3fc;
+  --accent-strong: #38bdf8;
+  --warning: #f97316;
+  --border: rgba(255, 255, 255, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.25), transparent 55%),
+    linear-gradient(135deg, #040b15, #0a1221 65%);
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.editor-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.65);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.3), transparent 40%);
+  pointer-events: none;
+}
+
+.hero-card h1 {
+  margin: 0.4rem 0 0.85rem;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.hero-label {
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: rgba(248, 250, 252, 0.6);
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.hero-meta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-count {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hero-text {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(320px, 2fr);
+  gap: 1.25rem;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.panel-header p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.list-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#record-search {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+}
+
+#record-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.45);
+}
+
+#record-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  max-height: 420px;
+  overflow: auto;
+}
+
+#record-list li {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.95rem;
+  padding: 0.85rem;
+  background: var(--panel-accent);
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+
+#record-list li:hover,
+#record-list li:focus-visible {
+  border-color: rgba(59, 130, 246, 0.45);
+  transform: translateY(-2px);
+}
+
+#record-list li.active {
+  border-color: var(--accent);
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.record-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.record-meta strong {
+  color: var(--text);
+}
+
+.list-hint {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(248, 250, 252, 0.4);
+}
+
+.form-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form-group,
+.sub-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label,
+.sub-group span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.form-group input,
+.form-group textarea,
+.sub-group input {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.legend {
+  font-size: 0.8rem;
+}
+
+.ghs-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.75rem;
+}
+
+.ghs-toggle {
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.ghs-toggle img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.ghs-toggle span {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.ghs-toggle[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-2px);
+}
+
+.actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.actions button {
+  border: none;
+  border-radius: 0.85rem;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.95rem;
+  font-family: 'Space Grotesk', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#save-button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #0f172a;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.5);
+}
+
+#save-button:hover {
+  transform: translateY(-1px);
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.form-feedback {
+  margin: 0;
+  min-height: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.form-feedback[data-state="success"] {
+  color: #4ade80;
+}
+
+.form-feedback[data-state="error"] {
+  color: #f87171;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+}

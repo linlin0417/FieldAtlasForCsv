@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Atlas SDS 編輯面板</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="editor-shell">
+    <section class="hero-card">
+      <p class="hero-label">SDS 編輯控制台</p>
+      <h1>直接在本地新增或調整化學品描述</h1>
+      <p class="hero-subtitle">使用可視化欄位，快速更新分子量、GHS 圖示、LD50/LC50 與急救措施，變更會同步寫回 CSV/JSON/Markdown。</p>
+      <div class="hero-meta">
+        <div>
+          <span class="hero-count" id="record-count">0</span>
+          <span class="hero-text">筆現有紀錄</span>
+        </div>
+        <div>
+          <span class="hero-count" id="mode-indicator">新增中</span>
+          <span class="hero-text">目前模式</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="editor-grid">
+      <aside class="panel list-panel">
+        <div class="panel-header">
+          <h2>資料瀏覽</h2>
+          <p>點擊即可載入底層資料</p>
+        </div>
+        <label class="sr-only" for="record-search">搜尋 CAS</label>
+        <input id="record-search" type="search" placeholder="64-17-5 / 乙醇" autocomplete="off">
+        <ul id="record-list"></ul>
+        <p class="list-hint">可按 Enter 鍵快速載入列出的化學品。</p>
+      </aside>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>化學品表單</h2>
+          <p>所有欄位皆可編輯， CAS 編號在更新時會保持唯一直。</p>
+        </div>
+        <form id="editor-form">
+          <div class="form-group">
+            <label for="cas-input">CAS No.</label>
+            <input id="cas-input" name="CasNo" type="text" required maxlength="12" placeholder="例如 64-17-5">
+          </div>
+          <div class="grid two">
+            <label class="form-group">
+              <span>中文名稱</span>
+              <input id="chinese-name" name="ZhtwName" type="text" required>
+            </label>
+            <label class="form-group">
+              <span>英文名稱</span>
+              <input id="english-name" name="EnName" type="text" required>
+            </label>
+          </div>
+          <div class="grid two">
+            <label class="form-group">
+              <span>化學式</span>
+              <input id="chemical-formula" name="ChemicalFormula" type="text" required>
+            </label>
+            <label class="form-group">
+              <span>分子量</span>
+              <input id="molecular-weight" name="MolecularWeight" type="text" placeholder="g/mol">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="hazard-input">危害分類（以逗號或換行分隔）</label>
+            <textarea id="hazard-input" name="HazardClassification" rows="3" required placeholder="e.g. 易燃液體第2級，急毒性物質(口服)第3級"></textarea>
+          </div>
+          <div class="grid two">
+            <label class="form-group">
+              <span>LD50</span>
+              <input id="ld50" name="LD50" type="text" required placeholder="5628 mg/kg(大鼠口服)">
+            </label>
+            <label class="form-group">
+              <span>LC50</span>
+              <input id="lc50" name="LC50" type="text" placeholder="mg/m³">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="stability-input">安定性與反應性</label>
+            <textarea id="stability-input" name="StabilityAndReactivity" rows="3" required></textarea>
+          </div>
+          <fieldset class="form-group">
+            <legend>急救措施</legend>
+            <div class="grid two">
+              <label class="sub-group">
+                <span>吸入</span>
+                <input id="first-aid-inhalation" name="FirstAidMeasures.Inhalation" type="text">
+              </label>
+              <label class="sub-group">
+                <span>眼睛接觸</span>
+                <input id="first-aid-eye" name="FirstAidMeasures.EyeContact" type="text">
+              </label>
+            </div>
+            <div class="grid two">
+              <label class="sub-group">
+                <span>皮膚接觸</span>
+                <input id="first-aid-skin" name="FirstAidMeasures.SkinContact" type="text">
+              </label>
+              <label class="sub-group">
+                <span>食入</span>
+                <input id="first-aid-ingestion" name="FirstAidMeasures.Ingestion" type="text">
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label>選擇 GHS 圖示</label>
+            <div id="ghs-palette" class="ghs-palette"></div>
+          </div>
+          <div class="actions">
+            <button id="save-button" type="submit">儲存資料</button>
+            <button id="clear-button" type="button" class="ghost">清除表單</button>
+          </div>
+          <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

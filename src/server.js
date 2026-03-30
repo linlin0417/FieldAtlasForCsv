@@ -1,11 +1,12 @@
 import express from 'express';
 import helmet from 'helmet';
 import sdsRoutes from './routes/sds.routes.js';
+import ghsRoutes from './routes/ghs.routes.js';
 import logger from './utils/logger.js';
 import { initDataStore } from './services/sds.service.js';
 import { AppError, isAppError } from './utils/errors.js';
 
-export async function createServer() {
+export async function createServer({ mountStaticRoutes } = {}) {
   await initDataStore();
 
   const app = express();
@@ -15,6 +16,11 @@ export async function createServer() {
   app.use(express.json({ limit: '1mb' }));
 
   app.use('/api/sds', sdsRoutes);
+  app.use('/api/ghs', ghsRoutes);
+
+  if (typeof mountStaticRoutes === 'function') {
+    mountStaticRoutes(app);
+  }
 
   app.use((req, res, next) => {
     next(new AppError('找不到對應的路由', 404));

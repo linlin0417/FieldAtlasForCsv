@@ -2,6 +2,7 @@ import {
   listRecords,
   getRecord,
   createRecord,
+  updateRecord,
   removeRecord,
   validateIntegrity
 } from '../services/sds.service.js';
@@ -49,6 +50,18 @@ export async function handleDelete(req, res, next) {
     await removeRecord(req.params.casNo);
     res.json({
       message: '刪除完成'
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+export async function handleUpdate(req, res, next) {
+  try {
+    const result = await updateRecord(req.params.casNo, req.body);
+    res.json({
+      message: '更新成功',
+      data: result
     });
   } catch (error) {
     next(error);

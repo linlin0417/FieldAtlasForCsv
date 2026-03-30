@@ -28,7 +28,10 @@ function toExternal(record) {
     ZhtwName: record.zhtwName,
     EnName: record.enName,
     ChemicalFormula: record.chemicalFormula,
+    MolecularWeight: record.molecularWeight,
     HazardClassification: record.hazardClassification.join(','),
+    GHS: record.ghs.join(','),
+    GHSList: record.ghs,
     FirstAidMeasures: {
       Inhalation: record.firstAidMeasures.inhalation,
       EyeContact: record.firstAidMeasures.eyeContact,
@@ -36,6 +39,7 @@ function toExternal(record) {
       Ingestion: record.firstAidMeasures.ingestion
     },
     LD50: record.ld50,
+    LC50: record.lc50,
     StabilityAndReactivity: record.stabilityAndReactivity
   };
 }
@@ -46,12 +50,15 @@ function toCsvRow(record) {
     ZhtwName: record.zhtwName,
     EnName: record.enName,
     ChemicalFormula: record.chemicalFormula,
+    MolecularWeight: record.molecularWeight,
+    GHS: record.ghs.join(','),
     HazardClassification: record.hazardClassification.join(','),
     Inhalation: record.firstAidMeasures.inhalation,
     EyeContact: record.firstAidMeasures.eyeContact,
     SkinContact: record.firstAidMeasures.skinContact,
     Ingestion: record.firstAidMeasures.ingestion,
     LD50: record.ld50,
+    LC50: record.lc50,
     StabilityAndReactivity: record.stabilityAndReactivity
   };
 }
@@ -62,14 +69,18 @@ function recordsEqual(a, b) {
     a.zhtwName === b.zhtwName &&
     a.enName === b.enName &&
     a.chemicalFormula === b.chemicalFormula &&
+    a.molecularWeight === b.molecularWeight &&
     a.ld50 === b.ld50 &&
+    a.lc50 === b.lc50 &&
     a.stabilityAndReactivity === b.stabilityAndReactivity &&
     a.firstAidMeasures.inhalation === b.firstAidMeasures.inhalation &&
     a.firstAidMeasures.eyeContact === b.firstAidMeasures.eyeContact &&
     a.firstAidMeasures.skinContact === b.firstAidMeasures.skinContact &&
     a.firstAidMeasures.ingestion === b.firstAidMeasures.ingestion &&
     a.hazardClassification.length === b.hazardClassification.length &&
-    a.hazardClassification.every((item, index) => item === b.hazardClassification[index])
+    a.hazardClassification.every((item, index) => item === b.hazardClassification[index]) &&
+    a.ghs.length === b.ghs.length &&
+    a.ghs.every((item, index) => item === b.ghs[index])
   );
 }
 
@@ -147,7 +158,9 @@ async function importFromCsv() {
       CasNo: row.CasNo,
       ZhtwName: row.ZhtwName,
       EnName: row.EnName,
-        ChemicalFormula: row.ChemicalFormula,
+      ChemicalFormula: row.ChemicalFormula,
+      MolecularWeight: row.MolecularWeight,
+      GHS: row.GHS,
       HazardClassification: normaliseHazardClassification(row.HazardClassification),
       FirstAidMeasures: {
         Inhalation: row.Inhalation,
@@ -156,6 +169,7 @@ async function importFromCsv() {
         Ingestion: row.Ingestion
       },
       LD50: row.LD50,
+      LC50: row.LC50,
       StabilityAndReactivity: row.StabilityAndReactivity
     };
     const result = safeParseSdsPayload(candidate);
@@ -225,6 +239,24 @@ export async function createRecord(payload) {
   return toExternal(record);
 }
 
+export async function updateRecord(casNo, payload) {
+  const key = casNo?.trim();
+  if (!key) {
+    throw new AppError('請提供有效的 CAS No.', 400);
+  }
+  if (!dataStore.has(key)) {
+    throw new AppError(`找不到 CAS No. 為 ${key} 的資料`, 404);
+  }
+  const record = hydrateRecord(payload);
+  if (record.casNo !== key) {
+    throw new AppError('CAS No. 不能在更新時異動', 400);
+  }
+  dataStore.set(key, record);
+  await persistAll();
+  logger.info('已更新 CAS No. %s', key);
+  return toExternal(record);
+}
+
 export async function removeRecord(casNo) {
   const key = casNo?.trim();
   if (!key) {
@@ -275,6 +307,8 @@ function mapFromCsvRows(csvRows) {
       ZhtwName: row.ZhtwName,
       EnName: row.EnName,
       ChemicalFormula: row.ChemicalFormula,
+      MolecularWeight: row.MolecularWeight,
+      GHS: row.GHS,
       HazardClassification: normaliseHazardClassification(row.HazardClassification),
       FirstAidMeasures: {
         Inhalation: row.Inhalation,
@@ -283,6 +317,7 @@ function mapFromCsvRows(csvRows) {
         Ingestion: row.Ingestion
       },
       LD50: row.LD50,
+      LC50: row.LC50,
       StabilityAndReactivity: row.StabilityAndReactivity
     };
     const result = safeParseSdsPayload(candidate);

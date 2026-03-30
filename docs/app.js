@@ -18,6 +18,9 @@ let detailLd50;
 let detailStability;
 let markdownContent;
 let copyMarkdownButton;
+let detailMolecularWeight;
+let detailGhs;
+let detailLc50;
 
 const state = {
   index: [],
@@ -31,6 +34,7 @@ const state = {
 };
 
 let markedParser = typeof window.marked !== 'undefined' ? window.marked : null;
+const GHS_ICON_ROOT = '../data/ghs';
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init, { once: true });
@@ -104,6 +108,9 @@ function cacheDomRefs() {
   detailAid = document.getElementById('detail-aid');
   detailLd50 = document.getElementById('detail-ld50');
   detailStability = document.getElementById('detail-stability');
+  detailMolecularWeight = document.getElementById('detail-mw');
+  detailGhs = document.getElementById('detail-ghs');
+  detailLc50 = document.getElementById('detail-lc50');
   markdownContent = document.getElementById('markdown-content');
   copyMarkdownButton = document.getElementById('copy-markdown');
 
@@ -120,6 +127,9 @@ function cacheDomRefs() {
     detailAid &&
     detailLd50 &&
     detailStability &&
+    detailMolecularWeight &&
+    detailGhs &&
+    detailLc50 &&
     markdownContent &&
     copyMarkdownButton
   );
@@ -166,6 +176,11 @@ function ensureModalStructure() {
   formulaSpan.className = 'detail-chip';
   meta.appendChild(formulaSpan);
 
+  const mwSpan = document.createElement('span');
+  mwSpan.id = 'detail-mw';
+  mwSpan.className = 'detail-chip';
+  meta.appendChild(mwSpan);
+
   header.appendChild(meta);
 
   const bodySection = document.createElement('section');
@@ -176,9 +191,11 @@ function ensureModalStructure() {
 
   const infoConfig = [
     { label: '英文名稱', id: 'detail-en', isList: false },
+    { label: 'GHS 圖示', id: 'detail-ghs', isList: false },
     { label: '危害分類', id: 'detail-hazard', isList: false },
     { label: '急救措施', id: 'detail-aid', isList: true },
     { label: 'LD50', id: 'detail-ld50', isList: false },
+    { label: 'LC50', id: 'detail-lc50', isList: false },
     { label: '安定性與反應性', id: 'detail-stability', isList: false }
   ];
 
@@ -357,10 +374,13 @@ function renderDetail(record) {
   detailTitle.textContent = record.ZhtwName || record.EnName || record.CasNo;
   detailCas.textContent = `CAS No. ${record.CasNo}`;
   detailFormula.textContent = record.ChemicalFormula ? `化學式 ${record.ChemicalFormula}` : '未提供化學式';
+  detailMolecularWeight.textContent = record.MolecularWeight ? `分子量 ${record.MolecularWeight}` : '未提供分子量';
+  renderGhsIcons(resolveGhsList(record));
   detailEn.textContent = record.EnName || '—';
   renderHazard(record.HazardClassification);
   renderAid(record.FirstAidMeasures);
   detailLd50.textContent = record.LD50 || '—';
+  detailLc50.textContent = record.LC50 || '—';
   detailStability.textContent = record.StabilityAndReactivity || '—';
   markdownContent.innerHTML = '';
   copyMarkdownButton.disabled = true;
@@ -388,6 +408,47 @@ function renderHazard(hazardString) {
     container.appendChild(span);
   });
   detailHazard.appendChild(container);
+}
+
+function resolveGhsList(record) {
+  if (!record) {
+    return [];
+  }
+  if (Array.isArray(record.GHSList) && record.GHSList.length) {
+    return record.GHSList.map(item => item?.trim()).filter(Boolean);
+  }
+  if (typeof record.GHS === 'string' && record.GHS.trim()) {
+    return record.GHS.split(',').map(item => item.trim()).filter(Boolean);
+  }
+  return [];
+}
+
+function renderGhsIcons(list) {
+  detailGhs.innerHTML = '';
+  if (!Array.isArray(list) || !list.length) {
+    detailGhs.textContent = '—';
+    return;
+  }
+  const stage = document.createElement('div');
+  stage.className = 'ghs-grid';
+  list.forEach(code => {
+    const normalized = code?.trim();
+    if (!normalized) {
+      return;
+    }
+    const fileName = normalized.endsWith('.jpg') ? normalized : `${normalized}.jpg`;
+    const figure = document.createElement('figure');
+    figure.className = 'ghs-card';
+    const img = document.createElement('img');
+    img.src = `${GHS_ICON_ROOT}/${encodeURIComponent(fileName)}`;
+    img.alt = `${normalized} 圖示`;
+    img.loading = 'lazy';
+    const caption = document.createElement('figcaption');
+    caption.textContent = normalized;
+    figure.append(img, caption);
+    stage.appendChild(figure);
+  });
+  detailGhs.appendChild(stage);
 }
 
 function renderAid(measures = {}) {
