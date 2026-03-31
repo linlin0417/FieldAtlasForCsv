@@ -101,7 +101,7 @@ main.page {
   flex-direction: column;
   gap: 0.45rem;
   cursor: pointer;
-  min-height: 114px;
+  min-height: 136px;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
@@ -125,6 +125,38 @@ main.page {
 .result-item .formula {
   font-size: 0.85rem;
   color: #64748b;
+}
+
+.result-ghs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin-top: auto;
+  min-height: 1.75rem;
+}
+
+.result-ghs-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.45rem;
+  background: #ffffff;
+  padding: 0.12rem;
+}
+
+.result-ghs-empty {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.result-ghs-more {
+  font-size: 0.72rem;
+  color: #334155;
+  background: #e2e8f0;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
 }
 
 .empty-hint {

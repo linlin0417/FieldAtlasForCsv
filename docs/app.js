@@ -73,9 +73,15 @@ async function init() {
     console.error('載入索引失敗:', error);
   }
 
-  ensureDataset().catch(error => {
-    console.error('預先載入 SDS 資料失敗:', error);
-  });
+  ensureDataset()
+    .then(() => {
+      const currentKeyword = keywordInput.value.trim();
+      const filtered = filterRecords(currentKeyword);
+      renderResults(filtered, currentKeyword);
+    })
+    .catch(error => {
+      console.error('預先載入 SDS 資料失敗:', error);
+    });
 
   keywordInput.addEventListener('input', handleKeywordChange);
   copyMarkdownButton.addEventListener('click', handleCopyMarkdown);
@@ -323,7 +329,9 @@ function renderResults(records, keyword = '') {
     formulaSpan.className = 'formula';
     formulaSpan.textContent = item.ChemicalFormula || '—';
 
-    li.append(casSpan, nameSpan, formulaSpan);
+    const ghsPreview = createResultGhsPreview(item);
+
+    li.append(casSpan, nameSpan, formulaSpan, ghsPreview);
 
     li.addEventListener('click', () => selectRecord(item.CasNo));
     li.addEventListener('keydown', event => {
@@ -336,6 +344,45 @@ function renderResults(records, keyword = '') {
     fragment.appendChild(li);
   });
   resultList.appendChild(fragment);
+}
+
+function createResultGhsPreview(item) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'result-ghs';
+
+  const source = state.dataset?.[item.CasNo] || item;
+  const ghsList = resolveGhsList(source);
+  if (!ghsList.length) {
+    const empty = document.createElement('span');
+    empty.className = 'result-ghs-empty';
+    empty.textContent = state.dataset ? '無 GHS 圖示' : 'GHS 載入中...';
+    wrapper.appendChild(empty);
+    return wrapper;
+  }
+
+  const maxVisible = 4;
+  ghsList.slice(0, maxVisible).forEach(code => {
+    const normalized = code?.trim();
+    const fileName = resolveGhsIconFileName(normalized);
+    if (!normalized || !fileName) {
+      return;
+    }
+    const img = document.createElement('img');
+    img.className = 'result-ghs-icon';
+    img.src = `${GHS_ICON_ROOT}/${encodeURIComponent(fileName)}`;
+    img.alt = `${normalized} 圖示`;
+    img.loading = 'lazy';
+    wrapper.appendChild(img);
+  });
+
+  if (ghsList.length > maxVisible) {
+    const more = document.createElement('span');
+    more.className = 'result-ghs-more';
+    more.textContent = `+${ghsList.length - maxVisible}`;
+    wrapper.appendChild(more);
+  }
+
+  return wrapper;
 }
 
 async function selectRecord(casNo) {
@@ -423,6 +470,14 @@ function resolveGhsList(record) {
   return [];
 }
 
+function resolveGhsIconFileName(code) {
+  const normalized = code?.trim();
+  if (!normalized) {
+    return null;
+  }
+  return /\.jpg$/i.test(normalized) ? normalized : `${normalized}.jpg`;
+}
+
 function renderGhsIcons(list) {
   detailGhs.innerHTML = '';
   if (!Array.isArray(list) || !list.length) {
@@ -433,10 +488,13 @@ function renderGhsIcons(list) {
   stage.className = 'ghs-grid';
   list.forEach(code => {
     const normalized = code?.trim();
+    const fileName = resolveGhsIconFileName(normalized);
     if (!normalized) {
       return;
     }
-    const fileName = normalized.endsWith('.jpg') ? normalized : `${normalized}.jpg`;
+    if (!fileName) {
+      return;
+    }
     const figure = document.createElement('figure');
     figure.className = 'ghs-card';
     const img = document.createElement('img');
