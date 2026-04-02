@@ -4,17 +4,20 @@
     "ZhtwName": "乙醯水楊酸",
     "EnName": "Acetylsalicylic Acid",
     "ChemicalFormula": "C9H8O4",
-    "MolecularWeight": "",
+    "MolecularWeight": "180.16 g/mol",
     "HazardClassification": "急毒性物質(口服)第4級,皮膚刺激第2級,眼睛刺激第2A級,特定標的器官毒性(單次暴露)第3級(呼吸道刺激)",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS07,GHS08",
+    "GHSList": [
+      "GHS07",
+      "GHS08"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處",
       "EyeContact": "以大量清水沖洗",
       "SkinContact": "以清水沖洗",
       "Ingestion": "漱口"
     },
-    "LD50": "200 mg/kg(大鼠口服)",
+    "LD50": "1500 mg/kg ( Rat ), > 7940 mg/kg  ( Rabbit )",
     "LC50": "",
     "StabilityAndReactivity": "常溫下穩定，避免受熱及與強氧化劑接觸"
   },
@@ -23,18 +26,20 @@
     "ZhtwName": "抗壞血酸",
     "EnName": "Ascorbic acid",
     "ChemicalFormula": "C6H8O6",
-    "MolecularWeight": "",
+    "MolecularWeight": "176.12 g/mol",
     "HazardClassification": "急毒性物質第5級(吞食),急毒性物質第5級(皮膚)",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS07",
+    "GHSList": [
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "",
-      "EyeContact": "",
+      "EyeContact": "以清水沖15min",
       "SkinContact": "",
       "Ingestion": ""
     },
     "LD50": "-",
-    "LC50": "",
+    "LC50": "-",
     "StabilityAndReactivity": "避免高溫與強氧化劑，保持容器密閉並存放於陰涼乾燥處"
   },
   "56-40-6": {
@@ -54,7 +59,7 @@
     },
     "LD50": "7930 mg/kg(大鼠口服)",
     "LC50": "",
-    "StabilityAndReactivity": "避免與強氧化劑接觸"
+    "StabilityAndReactivity": "避免與強氧化劑接觸,並存放於2 - 30 °C"
   },
   "64-17-5": {
     "CasNo": "64-17-5",
@@ -63,8 +68,11 @@
     "ChemicalFormula": "C2H6O",
     "MolecularWeight": "",
     "HazardClassification": "易燃液體第2級,眼睛刺激性第2級,特定標的器官毒性(單次暴露)第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS07,GHS02",
+    "GHSList": [
+      "GHS07",
+      "GHS02"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -82,8 +90,12 @@
     "ChemicalFormula": "CH3OH",
     "MolecularWeight": "",
     "HazardClassification": "易燃液體第2級,急毒性物質(口服)第3級,急毒性物質(吸入)第3級,特定標的器官毒性(單次暴露)第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS02,GHS08,GHS07",
+    "GHSList": [
+      "GHS02",
+      "GHS08",
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -99,10 +111,13 @@
     "ZhtwName": "異丙醇",
     "EnName": "Isopropyl alcohol",
     "ChemicalFormula": "C3H8O",
-    "MolecularWeight": "",
+    "MolecularWeight": "60.10 g/mo",
     "HazardClassification": "易燃液體第2級,急毒性物質(口服)第4級,急毒性物質(吸入)第4級,眼睛刺激性第2級,特定標的器官毒性(單次暴露)第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS02,GHS07",
+    "GHSList": [
+      "GHS02",
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -120,8 +135,12 @@
     "ChemicalFormula": "C3H6O",
     "MolecularWeight": "",
     "HazardClassification": "易燃液體第2級,嚴重眼刺激第2級,特定標的器官毒性(單次暴露)第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS02,GHS07,GHS08",
+    "GHSList": [
+      "GHS02",
+      "GHS07",
+      "GHS08"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "將暴露者移至空氣新鮮且通風良好處，鬆開緊身衣物以利呼吸，觀察是否出現頭暈、嗜睡或呼吸急促等症狀並持續監測。",
       "EyeContact": "立即以緩和流動清水或生理食鹽水沖洗10–15分鐘，撐開上下眼瞼並轉動眼球，確認沖洗液充分接觸整個結膜囊，可在沖洗過程中移除隱形眼鏡。",
@@ -1045,6 +1064,6 @@
     },
     "LD50": ">300 mg/kg(大鼠口服，推估值)",
     "LC50": "248mg/m³",
-    "StabilityAndReactivity": "遠離火苗、熱的表面和火源。採取防止靜電放電的措施。 \n容器保持緊閉，放在乾燥通風處。 遠離熱源和引火源。 不要存放在靠近酸的地方。"
+    "StabilityAndReactivity": "遠離火苗、熱的表面和火源。採取防止靜電放電的措施。"
   }
 }
