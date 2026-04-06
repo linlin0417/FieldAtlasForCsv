@@ -1,0 +1,201 @@
+.result-ghs-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: nowrap;
+}
+
+.ghs-merged {
+  --icon-height: 2.35rem;
+  --ghs-count: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  background: #ffffff;
+  max-width: 100%;
+  min-height: var(--icon-height);
+  min-width: calc(var(--icon-height) * var(--ghs-count));
+}
+
+.ghs-merged-image {
+  display: block;
+  height: var(--icon-height);
+  width: auto;
+  max-width: 100%;
+}
+
+.ghs-merged-image:not([src]) {
+  opacity: 0;
+}
+
+.ghs-merged.is-loading {
+  background: linear-gradient(110deg, #f1f5f9 20%, #e2e8f0 40%, #f1f5f9 60%);
+  background-size: 200% 100%;
+  animation: ghsMergeLoading 1.2s linear infinite;
+}
+
+.ghs-merged--mini {
+  --icon-height: 1.75rem;
+  border-radius: 0.45rem;
+}
+
+.ghs-merged--empty {
+  color: #64748b;
+  font-size: 0.78rem;
+  padding: 0.1rem 0.45rem;
+}
+
+#detail-ghs {
+  display: flex;
+  align-items: center;
+  min-height: 2.35rem;
+  overflow-x: auto;
+}
+
+#detail-ghs .ghs-merged {
+  flex-shrink: 0;
+}
+
+@keyframes ghsMergeLoading {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+html[data-theme="dark"] body {
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .search-card,
+html[data-theme="dark"] .result-item,
+html[data-theme="dark"] .dialog-inner {
+  background: #111827;
+  border-color: #334155;
+}
+
+html[data-theme="dark"] .search-card {
+  box-shadow: 0 20px 48px rgba(2, 6, 23, 0.7);
+}
+
+html[data-theme="dark"] .search-card h1,
+html[data-theme="dark"] .result-item .cas,
+html[data-theme="dark"] .dialog-header h2,
+html[data-theme="dark"] .detail-info dt,
+html[data-theme="dark"] .section-header h3 {
+  color: #f8fafc;
+}
+
+html[data-theme="dark"] .intro,
+html[data-theme="dark"] .result-summary,
+html[data-theme="dark"] .result-item .name,
+html[data-theme="dark"] .detail-info dd,
+html[data-theme="dark"] .aid-list,
+html[data-theme="dark"] .markdown-content,
+html[data-theme="dark"] .view-link,
+html[data-theme="dark"] .theme-toggle {
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .search-label,
+html[data-theme="dark"] .result-ghs-more {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] #keyword {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+html[data-theme="dark"] #keyword:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+html[data-theme="dark"] .result-item:hover,
+html[data-theme="dark"] .result-item:focus-visible {
+  border-color: #38bdf8;
+  box-shadow: 0 16px 32px rgba(2, 132, 199, 0.25);
+}
+
+html[data-theme="dark"] .result-item .formula,
+html[data-theme="dark"] .result-ghs-empty,
+html[data-theme="dark"] .empty-hint,
+html[data-theme="dark"] .ghs-merged--empty {
+  color: #94a3b8;
+}
+
+html[data-theme="dark"] .result-ghs-more,
+html[data-theme="dark"] .detail-chip,
+html[data-theme="dark"] .dialog-close,
+html[data-theme="dark"] .view-link,
+html[data-theme="dark"] .theme-toggle {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+html[data-theme="dark"] .detail-chip,
+html[data-theme="dark"] .dialog-close {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .view-link:hover,
+html[data-theme="dark"] .theme-toggle:hover,
+html[data-theme="dark"] .dialog-close:hover {
+  background: #334155;
+  border-color: #64748b;
+}
+
+html[data-theme="dark"] .view-link.is-active,
+html[data-theme="dark"] .view-link[aria-current="page"] {
+  background: #38bdf8;
+  border-color: #38bdf8;
+  color: #082f49;
+}
+
+html[data-theme="dark"] .empty-hint {
+  background: rgba(15, 23, 42, 0.75);
+  border-color: #334155;
+}
+
+html[data-theme="dark"] .hazard-tag {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+html[data-theme="dark"] .markdown-content {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html[data-theme="dark"] .markdown-content pre {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .ghs-merged {
+  border-color: #475569;
+  background: #0f172a;
+}
+
+html[data-theme="dark"] .ghs-merged.is-loading {
+  background: linear-gradient(110deg, #0f172a 20%, #1e293b 40%, #0f172a 60%);
+  background-size: 200% 100%;
+}
+
+@media (max-width: 640px) {
+  .ghs-merged {
+    --icon-height: 2rem;
+  }
+
+  .ghs-merged--mini {
+    --icon-height: 1.6rem;
+  }
+}

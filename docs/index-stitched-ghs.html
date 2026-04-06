@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Field Atlas SDS 查詢</title>
+  <title>Field Atlas SDS 查詢（GHS 拼接版）</title>
   <link rel="stylesheet" href="./styles.css?v=20260406">
+  <link rel="stylesheet" href="./styles-stitched-ghs.css?v=20260407">
 </head>
 <body>
   <main class="page">
     <section class="search-card">
-      <h1>Field Atlas SDS 查詢</h1>
+      <h1>Field Atlas SDS 查詢（GHS 拼接版）</h1>
       <p class="intro">就是讓無法使用irika-web-system-v2的人也能快速查詢化學品 SDS 資料的工具   就此而已</p>
       <div class="view-tools" aria-label="頁面版本切換">
-        <a class="view-link is-active" href="./index.html" aria-current="page">標準檢視</a>
-        <a class="view-link" href="./index-stitched-ghs.html">GHS 拼接檢視</a>
+        <a class="view-link" href="./index.html">標準檢視</a>
+        <a class="view-link is-active" href="./index-stitched-ghs.html" aria-current="page">GHS 拼接檢視</a>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">切換暗色</button>
       </div>
       <label class="search-label" for="keyword">搜尋關鍵字</label>
       <div class="search-control">
@@ -82,6 +84,6 @@
   </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js" crossorigin="anonymous"></script>
-  <script src="./app.js?v=20251126" defer></script>
+  <script src="./app-stitched-ghs.js?v=20260407" defer></script>
 </body>
 </html>
