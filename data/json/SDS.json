@@ -569,10 +569,12 @@
     "ZhtwName": "鹽酸",
     "EnName": "Hydrochloric acid",
     "ChemicalFormula": "HCl",
-    "MolecularWeight": "",
+    "MolecularWeight": "36.46 g/mol",
     "HazardClassification": "腐蝕性液體第1級,急毒性物質(吸入)第3級,皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05",
+    "GHSList": [
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "立即移至空氣流通處，保持呼吸暢通，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -590,8 +592,10 @@
     "ChemicalFormula": "NaCl",
     "MolecularWeight": "",
     "HazardClassification": "未分類(一般情況下無危害)，但大量吸入或攝取可能造成不適",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS07",
+    "GHSList": [
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，如有不適立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -607,10 +611,12 @@
     "ZhtwName": "硫酸",
     "EnName": "Sulfuric acid",
     "ChemicalFormula": "H2SO4",
-    "MolecularWeight": "",
+    "MolecularWeight": "98.08g/mol",
     "HazardClassification": "腐蝕性液體第1級,皮膚腐蝕/刺激第1級,眼睛嚴重損傷第1級,特定標的器官毒性(單次暴露)第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05",
+    "GHSList": [
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "立即移至空氣流通處，若呼吸困難給予氧氣並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -626,10 +632,12 @@
     "ZhtwName": "碘化鉀",
     "EnName": "Potassium iodide",
     "ChemicalFormula": "KI",
-    "MolecularWeight": "",
+    "MolecularWeight": "166.01 g/mol",
     "HazardClassification": "特定標的器官毒性(重複暴露)第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS08",
+    "GHSList": [
+      "GHS08"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處",
       "EyeContact": "以清水沖洗數分鐘",
@@ -645,17 +653,22 @@
     "ZhtwName": "次氯酸鈉溶液",
     "EnName": "Sodium hypochlorite solution",
     "ChemicalFormula": "NaClO",
-    "MolecularWeight": "",
+    "MolecularWeight": "74.44 g/mol",
     "HazardClassification": "GHS05,GHS09,造成嚴重皮膚灼傷和眼損傷,對水生生物有毒並具有長期持續影響",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS08,GHS05,GHS09,GHS06",
+    "GHSList": [
+      "GHS08",
+      "GHS05",
+      "GHS09",
+      "GHS06"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處",
       "EyeContact": "以大量清水沖洗",
       "SkinContact": "以大量清水沖洗",
       "Ingestion": ""
     },
-    "LD50": "-",
+    "LD50": "1136 mg/kg",
     "LC50": "",
     "StabilityAndReactivity": "避免與酸及氧化劑接觸"
   },
@@ -664,10 +677,14 @@
     "ZhtwName": "硝酸",
     "EnName": "Nitric acid",
     "ChemicalFormula": "HNO3",
-    "MolecularWeight": "",
+    "MolecularWeight": "63.01 g/mol",
     "HazardClassification": "氧化性液體第3類,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03,GHS05,GHS06",
+    "GHSList": [
+      "GHS03",
+      "GHS05",
+      "GHS06"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -683,10 +700,13 @@
     "ZhtwName": "三氯化鐵",
     "EnName": "Ferric chloride",
     "ChemicalFormula": "FeCl3",
-    "MolecularWeight": "",
+    "MolecularWeight": "162.21 g/mol",
     "HazardClassification": "腐蝕性物質,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS07,GHS05",
+    "GHSList": [
+      "GHS07",
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，若呼吸困難立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -721,10 +741,12 @@
     "ZhtwName": "硝酸鉀",
     "EnName": "Potassium nitrate",
     "ChemicalFormula": "KNO3",
-    "MolecularWeight": "",
+    "MolecularWeight": "101.10g/mol",
     "HazardClassification": "氧化性固體第3級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03",
+    "GHSList": [
+      "GHS03"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -740,7 +762,7 @@
     "ZhtwName": "硫酸鈉",
     "EnName": "Sodium sulfate",
     "ChemicalFormula": "Na2SO4",
-    "MolecularWeight": "",
+    "MolecularWeight": "142.04 g/mol",
     "HazardClassification": "非危險化學品",
     "GHS": "",
     "GHSList": [],
@@ -759,10 +781,14 @@
     "ZhtwName": "碘酸鉀",
     "EnName": "Potassium iodate",
     "ChemicalFormula": "KIO3",
-    "MolecularWeight": "",
+    "MolecularWeight": "214 g/mol",
     "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,眼睛刺激性第2A級,生殖毒性第2級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03,GHS08,GHS07",
+    "GHSList": [
+      "GHS03",
+      "GHS08",
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處",
       "EyeContact": "以大量清水沖洗數分鐘",
@@ -780,8 +806,12 @@
     "ChemicalFormula": "CuSO4·5H2O",
     "MolecularWeight": "",
     "HazardClassification": "急毒性物質第4級(吞食),腐蝕/刺激皮膚物質第2級,嚴重損傷/刺激眼睛物質第2A級,皮膚過敏物質第1級,生殖細胞致突變性物質第2級,生殖毒性物質第2級,特定標的器官系統毒性物質-重複暴露第1級,水環境之危害物質(慢毒性)第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05,GHS07,GHS09",
+    "GHSList": [
+      "GHS05",
+      "GHS07",
+      "GHS09"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "將患者移至空氣流通處，必要時施以人工呼吸。",
       "EyeContact": "立即以大量清水沖洗至少15分鐘。",
@@ -797,10 +827,15 @@
     "ZhtwName": "硝酸銀",
     "EnName": "Silver nitrate",
     "ChemicalFormula": "AgNO3",
-    "MolecularWeight": "",
+    "MolecularWeight": "169.87 g/mol",
     "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第3級,皮膚腐蝕/刺激第1B級,眼睛損傷第1級,危害水生環境-急性第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS08,GHS09,GHS05,GHS03",
+    "GHSList": [
+      "GHS08",
+      "GHS09",
+      "GHS05",
+      "GHS03"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -835,10 +870,12 @@
     "ZhtwName": "硝酸鋅",
     "EnName": "Zinc nitrate",
     "ChemicalFormula": "Zn(NO3)2",
-    "MolecularWeight": "",
+    "MolecularWeight": "297.47 g/mol",
     "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05",
+    "GHSList": [
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -854,10 +891,12 @@
     "ZhtwName": "硝酸鋁",
     "EnName": "Aluminum nitrate",
     "ChemicalFormula": "Al(NO3)3",
-    "MolecularWeight": "",
+    "MolecularWeight": "375.13 g/mol",
     "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05",
+    "GHSList": [
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -873,10 +912,14 @@
     "ZhtwName": "鉻酸鉀",
     "EnName": "Potassium chromate",
     "ChemicalFormula": "K2CrO4",
-    "MolecularWeight": "",
+    "MolecularWeight": "194.19 g/mol",
     "HazardClassification": "急毒性物質(口服)第3類,皮膚腐蝕/刺激第1類,嚴重眼損傷/眼刺激第1類,致癌性第1類,生殖毒性第1類,危害水生環境-急性第1類",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS08,GHS07,GHS09",
+    "GHSList": [
+      "GHS08",
+      "GHS07",
+      "GHS09"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -892,7 +935,7 @@
     "ZhtwName": "氯化鎂六水合物",
     "EnName": "Magnesium chloride hexahydrate",
     "ChemicalFormula": "MgCl2·6H2O",
-    "MolecularWeight": "",
+    "MolecularWeight": "203.30 g/mol",
     "HazardClassification": "-",
     "GHS": "",
     "GHSList": [],
@@ -930,7 +973,7 @@
     "ZhtwName": "可溶性澱粉",
     "EnName": "Starch, soluble",
     "ChemicalFormula": "-",
-    "MolecularWeight": "",
+    "MolecularWeight": "615.63 g/mol",
     "HazardClassification": "急毒性物質－吞食第5級,急毒性物質－皮膚第5級",
     "GHS": "",
     "GHSList": [],
@@ -949,10 +992,14 @@
     "ZhtwName": "硝酸銅",
     "EnName": "Copper(II) nitrate",
     "ChemicalFormula": "Cu(NO3)2",
-    "MolecularWeight": "",
+    "MolecularWeight": "241.60 g/mol",
     "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03,GHS07,GHS09",
+    "GHSList": [
+      "GHS03",
+      "GHS07",
+      "GHS09"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -968,10 +1015,13 @@
     "ZhtwName": "硝酸鉍",
     "EnName": "Bismuth nitrate",
     "ChemicalFormula": "Bi(NO3)3",
-    "MolecularWeight": "",
+    "MolecularWeight": "485.07 g/mol",
     "HazardClassification": "氧化性固體第2級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第2級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03,GHS07",
+    "GHSList": [
+      "GHS03",
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -987,10 +1037,15 @@
     "ZhtwName": "硝酸鉛",
     "EnName": "Lead nitrate",
     "ChemicalFormula": "Pb(NO3)2",
-    "MolecularWeight": "",
+    "MolecularWeight": "331.2098 g/mol",
     "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,特定標的器官毒性(反覆暴露)第2級,危害水生環境-急性第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS03,GHS05,GHS09,GHS08",
+    "GHSList": [
+      "GHS03",
+      "GHS05",
+      "GHS09",
+      "GHS08"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -1006,10 +1061,12 @@
     "ZhtwName": "硝酸鈣",
     "EnName": "Calcium nitrate",
     "ChemicalFormula": "Ca(NO3)2",
-    "MolecularWeight": "",
+    "MolecularWeight": "164.09 g/mol",
     "HazardClassification": "氧化性固體第3級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,危害水生環境-急性第3級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS05",
+    "GHSList": [
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -1025,10 +1082,14 @@
     "ZhtwName": "硝酸鈷",
     "EnName": "Cobalt(II) nitrate",
     "ChemicalFormula": "Co(NO3)2",
-    "MolecularWeight": "",
+    "MolecularWeight": "182.94 g/mol",
     "HazardClassification": "氧化性固體第2級,急毒性物質(口服)第4級,皮膚腐蝕/刺激第2級,眼睛刺激第2A級,致癌性第1B級,危害水生環境-急性第1級",
-    "GHS": "",
-    "GHSList": [],
+    "GHS": "GHS08,GHS09,GHS05",
+    "GHSList": [
+      "GHS08",
+      "GHS09",
+      "GHS05"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
       "EyeContact": "立即以大量清水沖洗至少15分鐘，並就醫",
@@ -1082,10 +1143,12 @@
     "ZhtwName": "氯化銨",
     "EnName": "Ammonium chloride",
     "ChemicalFormula": "NH4Cl",
-    "MolecularWeight": "",
-    "HazardClassification": "Acute toxicity Category 4,Eye irritation Category 2",
-    "GHS": "",
-    "GHSList": [],
+    "MolecularWeight": "53.49 g/mol",
+    "HazardClassification": "急性毒性物質 4,眼睛刺激第 2 級",
+    "GHS": "GHS07",
+    "GHSList": [
+      "GHS07"
+    ],
     "FirstAidMeasures": {
       "Inhalation": "將患者移至空氣新鮮處並保持安靜。",
       "EyeContact": "立即以大量清水小心沖洗眼睛數分鐘，如有隱形眼鏡且易於取出，先取下後持續沖洗。",
@@ -1103,10 +1166,11 @@
     "ChemicalFormula": "(NH4)2S",
     "MolecularWeight": "68.14 g/mol",
     "HazardClassification": "急毒性物質(吸入)第4級,皮膚腐蝕/刺激第1B級,眼睛刺激第2A級,危害水生環境-急性第2級,易燃液體 第2級",
-    "GHS": "GHS02,GHS05",
+    "GHS": "GHS02,GHS05,GHS07",
     "GHSList": [
       "GHS02",
-      "GHS05"
+      "GHS05",
+      "GHS07"
     ],
     "FirstAidMeasures": {
       "Inhalation": "移至空氣流通處，必要時給予人工呼吸並立即就醫",
