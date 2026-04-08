@@ -349,6 +349,27 @@
     "LC50": "",
     "StabilityAndReactivity": "避免與酸類接觸，儲存於乾燥、陰涼、通風良好處"
   },
+  "547-58-0": {
+    "CasNo": "547-58-0",
+    "ZhtwName": "甲基橙",
+    "EnName": "Methyl Orange",
+    "ChemicalFormula": "C14H14N3NaO3S",
+    "MolecularWeight": "327.33 g/mol",
+    "HazardClassification": "急毒性物質第 3 級",
+    "GHS": "GHS06",
+    "GHSList": [
+      "GHS06"
+    ],
+    "FirstAidMeasures": {
+      "Inhalation": "-",
+      "EyeContact": "-",
+      "SkinContact": "-",
+      "Ingestion": "-"
+    },
+    "LD50": "60 mg/kg（大鼠，吞食）",
+    "LC50": "-",
+    "StabilityAndReactivity": "一般情況下穏定"
+  },
   "1310-58-3": {
     "CasNo": "1310-58-3",
     "ZhtwName": "氫氧化鉀",

@@ -19,6 +19,8 @@ const inhalationInput = document.getElementById('first-aid-inhalation');
 const eyeInput = document.getElementById('first-aid-eye');
 const skinInput = document.getElementById('first-aid-skin');
 const ingestionInput = document.getElementById('first-aid-ingestion');
+const DEFAULT_API_ORIGIN = 'http://localhost:5004';
+const API_ORIGIN_PARAM_KEY = 'apiOrigin';
 
 const state = {
   records: [],
@@ -26,10 +28,12 @@ const state = {
   filtered: [],
   selectedGhs: new Set(),
   activeCas: null,
-  mode: 'create'
+  mode: 'create',
+  apiOrigin: ''
 };
 
 async function init() {
+  state.apiOrigin = resolveApiOrigin();
   await Promise.all([fetchRecords(), fetchGhs()]);
   form.addEventListener('submit', handleSubmit);
   searchInput.addEventListener('input', handleSearch);
@@ -38,11 +42,7 @@ async function init() {
 
 async function fetchRecords() {
   try {
-    const response = await fetch('/api/sds');
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const payload = await response.json();
+    const payload = await requestJson('/api/sds');
     state.records = (payload.data || []).slice().sort((left, right) =>
       left.CasNo.localeCompare(right.CasNo, 'en', { numeric: true })
     );
@@ -57,11 +57,7 @@ async function fetchRecords() {
 
 async function fetchGhs() {
   try {
-    const response = await fetch('/api/ghs');
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const payload = await response.json();
+    const payload = await requestJson('/api/ghs');
     state.ghs = payload.data || [];
     renderGhsPalette();
   } catch (error) {
@@ -235,15 +231,11 @@ async function handleSubmit(event) {
   try {
     const method = state.mode === 'edit' ? 'PUT' : 'POST';
     const target = state.mode === 'edit' ? `/api/sds/${state.activeCas}` : '/api/sds';
-    const response = await fetch(target, {
+    const result = await requestJson(target, {
       method,
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify(payload)
     });
-    const result = await response.json();
-    if (!response.ok) {
-      throw new Error(result?.message || '伺服器回傳錯誤');
-    }
     showFeedback(result?.message || '儲存成功', 'success');
     await fetchRecords();
     if (state.mode === 'create') {
@@ -256,6 +248,58 @@ async function handleSubmit(event) {
     console.error('handleSubmit', error);
     showFeedback(error.message || '儲存失敗', 'error');
   }
+}
+
+function requestJson(path, options = {}) {
+  const url = createApiUrl(path);
+  return fetch(url, options)
+    .catch(error => {
+      if (error?.message?.toLowerCase().includes('failed to fetch')) {
+        throw new Error(`無法連線 API（${url}）。請確認已執行 npm run edit，並從 http://localhost:5004 開啟編輯頁。`);
+      }
+      throw error;
+    })
+    .then(async response => {
+      const contentType = response.headers.get('content-type') || '';
+      const payload = contentType.includes('application/json')
+        ? await response.json().catch(() => null)
+        : null;
+
+      if (!response.ok) {
+        throw new Error(payload?.message || `HTTP ${response.status}`);
+      }
+
+      if (!payload) {
+        throw new Error(`API 回應格式錯誤（${url}），請確認目前頁面是由後端服務提供。`);
+      }
+
+      return payload;
+    });
+}
+
+function createApiUrl(path) {
+  if (!state.apiOrigin) {
+    return path;
+  }
+  return new URL(path, `${state.apiOrigin}/`).toString();
+}
+
+function resolveApiOrigin() {
+  const params = new URLSearchParams(window.location.search);
+  const fromQuery = params.get(API_ORIGIN_PARAM_KEY)?.trim();
+  if (fromQuery) {
+    return removeTrailingSlash(fromQuery);
+  }
+
+  if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+    return removeTrailingSlash(window.location.origin);
+  }
+
+  return DEFAULT_API_ORIGIN;
+}
+
+function removeTrailingSlash(text) {
+  return text.replace(/\/+$/, '');
 }
 
 function resetForm() {

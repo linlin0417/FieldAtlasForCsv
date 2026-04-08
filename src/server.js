@@ -15,6 +15,17 @@ export async function createServer({ mountStaticRoutes } = {}) {
   app.use(helmet());
   app.use(express.json({ limit: '1mb' }));
 
+  app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    if (req.method === 'OPTIONS') {
+      res.sendStatus(204);
+      return;
+    }
+    next();
+  });
+
   app.use('/api/sds', sdsRoutes);
   app.use('/api/ghs', ghsRoutes);
 
