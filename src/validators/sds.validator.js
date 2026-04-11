@@ -1,6 +1,7 @@
 import { z } from 'zod';
 
 const casNoPattern = /^\d{2,7}-\d{2}-\d$/;
+const hazardLevelTokenPattern = /^第\s*\d+(?:\s*[A-Za-z])?\s*[級類](?:\s*[（(][^）)]*[）)])?$/i;
 
 const hazardListSchema = z.array(z.string().trim().min(1)).nonempty({ message: '危害分類不得為空' });
 const ghsListSchema = z.array(z.string().trim().min(1)).default([]);
@@ -36,21 +37,40 @@ const preparedSdsSchema = z.object({
   StabilityAndReactivity: z.string().trim().min(1, { message: '請提供安定性與反應性資訊' })
 });
 
+function normaliseHazardToken(token) {
+  return (token ?? '')
+    .toString()
+    .trim()
+    .replace(/^[-*•]\s*/, '');
+}
+
+function mergeHazardClassification(items) {
+  const merged = [];
+  items.forEach(rawItem => {
+    const item = normaliseHazardToken(rawItem);
+    if (!item) {
+      return;
+    }
+    const previous = merged[merged.length - 1];
+    if (hazardLevelTokenPattern.test(item) && previous && !hazardLevelTokenPattern.test(previous)) {
+      merged[merged.length - 1] = `${previous}${item.replace(/\s+/g, '')}`;
+      return;
+    }
+    merged.push(item);
+  });
+  return merged;
+}
+
 export const querySchema = z.object({
   casNo: z.string().trim().optional()
 });
 
 export function normaliseHazardClassification(raw) {
   if (Array.isArray(raw)) {
-    return raw
-      .map(item => (item ?? '').toString().trim())
-      .filter(item => item.length > 0);
+    return mergeHazardClassification(raw);
   }
   if (typeof raw === 'string') {
-    return raw
-      .split(',')
-      .map(item => item.trim())
-      .filter(item => item.length > 0);
+    return mergeHazardClassification(raw.split(/[\n,，]/));
   }
   return [];
 }

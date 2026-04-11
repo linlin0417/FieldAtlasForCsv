@@ -32,6 +32,40 @@ const state = {
   apiOrigin: ''
 };
 
+const HAZARD_LEVEL_TOKEN_PATTERN = /^第\s*\d+(?:\s*[A-Za-z])?\s*[級類](?:\s*[（(][^）)]*[）)])?$/i;
+
+function normaliseHazardToken(token) {
+  return (token ?? '')
+    .toString()
+    .trim()
+    .replace(/^[-*•]\s*/, '');
+}
+
+function isHazardLevelToken(token) {
+  return HAZARD_LEVEL_TOKEN_PATTERN.test(token);
+}
+
+function mergeHazardItems(rawItems) {
+  const merged = [];
+  rawItems.forEach(rawItem => {
+    const item = normaliseHazardToken(rawItem);
+    if (!item) {
+      return;
+    }
+    const previous = merged[merged.length - 1];
+    if (isHazardLevelToken(item) && previous && !isHazardLevelToken(previous)) {
+      merged[merged.length - 1] = `${previous}${item.replace(/\s+/g, '')}`;
+      return;
+    }
+    merged.push(item);
+  });
+  return merged;
+}
+
+function parseHazardInput(value) {
+  return mergeHazardItems((value ?? '').toString().split(/[\n,，]/));
+}
+
 async function init() {
   state.apiOrigin = resolveApiOrigin();
   await Promise.all([fetchRecords(), fetchGhs()]);
@@ -132,11 +166,10 @@ function fillForm(data) {
   englishInput.value = data.EnName;
   formulaInput.value = data.ChemicalFormula;
   molecularInput.value = data.MolecularWeight || '';
-  hazardInput.value = (data.HazardClassification || '')
-    .split(',')
-    .map(item => item.trim())
-    .filter(Boolean)
-    .join('\n');
+  const hazardSource = Array.isArray(data.HazardClassification)
+    ? data.HazardClassification.join('\n')
+    : (data.HazardClassification || '');
+  hazardInput.value = parseHazardInput(hazardSource).join('\n');
   ld50Input.value = data.LD50 || '';
   lc50Input.value = data.LC50 || '';
   stabilityInput.value = data.StabilityAndReactivity || '';
@@ -197,10 +230,7 @@ function syncGhsPalette() {
 }
 
 function gatherFormPayload() {
-  const hazards = hazardInput.value
-    .split(/[,\n]/)
-    .map(item => item.trim())
-    .filter(item => item.length > 0);
+  const hazards = parseHazardInput(hazardInput.value);
   return {
     CasNo: casInput.value.trim(),
     ZhtwName: chineseInput.value.trim(),

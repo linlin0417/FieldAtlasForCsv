@@ -463,7 +463,7 @@
     "EnName": "Eriochrome Black T",
     "ChemicalFormula": "C20H12N3NaO7S",
     "MolecularWeight": "461.38 g/mol",
-    "HazardClassification": "刺激眼睛物質,第2級,水環境之危害物質（慢毒性）,第2級",
+    "HazardClassification": "刺激眼睛物質第2級,水環境之危害物質（慢毒性）第2級",
     "GHS": "GHS09,GHS07",
     "GHSList": [
       "GHS09",
