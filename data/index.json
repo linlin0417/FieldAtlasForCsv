@@ -84,12 +84,6 @@
     "ChemicalFormula": "C4H8O2"
   },
   {
-    "CasNo": "471-34-1",
-    "ZhtwName": "碳酸鈣",
-    "EnName": "Calcium carbonate",
-    "ChemicalFormula": "CaCO3"
-  },
-  {
     "CasNo": "497-19-8",
     "ZhtwName": "碳酸鈉",
     "EnName": "Sodium carbonate",
@@ -150,16 +144,16 @@
     "ChemicalFormula": "NH4NO3"
   },
   {
-    "CasNo": "7487-88-9",
-    "ZhtwName": "硫酸鎂",
-    "EnName": "Magnesium sulfate",
-    "ChemicalFormula": "MgSO4"
-  },
-  {
     "CasNo": "7558-79-4",
     "ZhtwName": "磷酸氫鈉",
     "EnName": "Disodium hydrogen phosphate",
     "ChemicalFormula": "Na2HPO4"
+  },
+  {
+    "CasNo": "7631-99-4",
+    "ZhtwName": "硝酸鈉",
+    "EnName": "Sodium nitrate",
+    "ChemicalFormula": "NaNO3"
   },
   {
     "CasNo": "7647-01-0",
@@ -240,12 +234,6 @@
     "ChemicalFormula": "AgNO3"
   },
   {
-    "CasNo": "7772-98-7",
-    "ZhtwName": "硫代硫酸鈉",
-    "EnName": "Sodium thiosulfate",
-    "ChemicalFormula": "Na2S2O3"
-  },
-  {
     "CasNo": "7779-88-6",
     "ZhtwName": "硝酸鋅",
     "EnName": "Zinc nitrate",
@@ -262,12 +250,6 @@
     "ZhtwName": "鉻酸鉀",
     "EnName": "Potassium chromate",
     "ChemicalFormula": "K2CrO4"
-  },
-  {
-    "CasNo": "7791-18-6",
-    "ZhtwName": "氯化鎂六水合物",
-    "EnName": "Magnesium chloride hexahydrate",
-    "ChemicalFormula": "MgCl2·6H2O"
   },
   {
     "CasNo": "9005-25-8",
