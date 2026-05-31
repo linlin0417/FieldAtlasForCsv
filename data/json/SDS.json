@@ -564,6 +564,27 @@
     "LC50": "",
     "StabilityAndReactivity": "穩定，避免與強酸接觸，儲存於乾燥陰涼處"
   },
+  "7631-90-5": {
+    "CasNo": "7631-90-5",
+    "ZhtwName": "亞硫酸氫鈉",
+    "EnName": "Sodium bisulfite",
+    "ChemicalFormula": "NaHSO3",
+    "MolecularWeight": "104.6 g/mol",
+    "HazardClassification": "急毒性物質 (吞食)第5級",
+    "GHS": "GHS07",
+    "GHSList": [
+      "GHS07"
+    ],
+    "FirstAidMeasures": {
+      "Inhalation": "吸入之後: 將傷者移到空氣新鮮處。",
+      "EyeContact": "眼睛接觸之後:以大量清水沖洗。 取下隱形眼鏡。",
+      "SkinContact": "皮膚接觸下: 立即移除所有受汙染的衣物。 用水沖洗皮膚／淋浴。 沖水(防止過敏)",
+      "Ingestion": "吞食之後:立即讓傷者飲水(最多 2 杯)。"
+    },
+    "LD50": "1,540 mg/kg (大鼠口服)",
+    "LC50": "5.5 mg/l",
+    "StabilityAndReactivity": "常溫常壓下穩定。 避免與酸(釋放二氧化碳)、鋁(腐蝕)、氧化劑(反應)"
+  },
   "7631-99-4": {
     "CasNo": "7631-99-4",
     "ZhtwName": "硝酸鈉",

@@ -156,6 +156,12 @@
     "ChemicalFormula": "Na2HPO4"
   },
   {
+    "CasNo": "7631-90-5",
+    "ZhtwName": "亞硫酸氫鈉",
+    "EnName": "Sodium bisulfite",
+    "ChemicalFormula": "NaHSO3"
+  },
+  {
     "CasNo": "7631-99-4",
     "ZhtwName": "硝酸鈉",
     "EnName": "Sodium nitrate",
